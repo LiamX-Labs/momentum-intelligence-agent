@@ -10,10 +10,15 @@ Flask app serving:
     consumed by the Next.js dashboard (web/) via CORS.
 
 Run:  python -m dashboard.app
+
+Environment variables:
+  AUTO_START_SCHEDULER  — "true" (default) starts the autonomous trading
+                           daemon on boot; set "false" to disable.
 """
 
 import json
 import logging
+import os
 import re
 from datetime import date, datetime
 from pathlib import Path
@@ -376,6 +381,42 @@ def api_scheduler():
         return jsonify({"enabled": False, "running": False, "cycle_count": 0, "error": "scheduler not loaded"})
 
 
+@app.route("/api/scheduler/start", methods=["POST"])
+def api_scheduler_start():
+    """Start the autonomous scheduler daemon."""
+    try:
+        from scheduler import start, get_status
+        start()
+        status = get_status()
+        return jsonify({"success": True, "status": status})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@app.route("/api/scheduler/stop", methods=["POST"])
+def api_scheduler_stop():
+    """Stop the autonomous scheduler daemon."""
+    try:
+        from scheduler import stop, get_status
+        stop()
+        status = get_status()
+        return jsonify({"success": True, "status": status})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@app.route("/api/scheduler/trigger", methods=["POST"])
+def api_scheduler_trigger():
+    """Immediately trigger a single trading cycle (non-blocking)."""
+    try:
+        from scheduler import trigger_now, get_status
+        trigger_now()
+        status = get_status()
+        return jsonify({"success": True, "message": "Cycle triggered", "status": status})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
 @app.route("/api/account")
 def api_account():
     """Live Alpaca paper account state — equity, cash, buying power, day P&L.
@@ -467,12 +508,20 @@ def trade_detail(trade_id: str):
 
 
 def run(host: str = "0.0.0.0", port: int = 8080, debug: bool = False):
-    """Start the Flask dashboard."""
+    """Start the Flask dashboard and optionally the autonomous scheduler."""
+    if os.environ.get("AUTO_START_SCHEDULER", "true").lower() in ("1", "true", "yes"):
+        cfg = load_config()
+        interval = cfg.get("scheduler", {}).get("interval_minutes", 15) * 60
+        enabled = cfg.get("scheduler", {}).get("enabled_on_start", True)
+        from scheduler import start
+        start(interval_seconds=interval, enabled=enabled)
+        log.info(f"Scheduler auto-started: interval={interval // 60}min, enabled={enabled}")
+
+    port = int(os.environ.get("PORT", port))
     log.info(f"Dashboard starting at http://{host}:{port}")
     app.run(host=host, port=port, debug=debug)
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    load_config()
     run(debug=True)
