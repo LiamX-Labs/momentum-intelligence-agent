@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Intelligence Agent — Dashboard</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #141422;
+            --border: #1e1e35;
+            --text: #d0d0e0;
+            --text-dim: #7878a0;
+            --green: #22c55e;
+            --red: #ef4444;
+            --blue: #3b82f6;
+            --amber: #f59e0b;
+            --purple: #a855f7;
+            --teal: #14b8a6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, monospace;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+        
+        /* Header */
+        .header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 24px;
+        }
+        .header h1 { font-size: 24px; color: #fff; letter-spacing: -0.5px; }
+        .header .subtitle { color: var(--teal); font-size: 13px; margin-top: 2px; }
+        .header .updated { color: var(--text-dim); font-size: 12px; }
+        .regime-badge {
+            padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase;
+        }
+        .regime-BULL { background: rgba(34,197,94,0.15); color: var(--green); }
+        .regime-NEUTRAL { background: rgba(245,158,11,0.15); color: var(--amber); }
+        .regime-BEAR { background: rgba(239,68,68,0.15); color: var(--red); }
+
+        /* Portfolio cards */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px; margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 10px; padding: 16px;
+        }
+        .stat-card .label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+        .stat-card .value { font-size: 24px; font-weight: 700; margin-top: 4px; }
+        .stat-card .sub { font-size: 12px; margin-top: 2px; }
+        .value-positive { color: var(--green); }
+        .value-negative { color: var(--red); }
+        .value-neutral { color: var(--blue); }
+
+        /* Sections */
+        .section {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 10px; padding: 20px; margin-bottom: 20px;
+        }
+        .section h2 { font-size: 16px; color: #fff; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .section h2 .count { font-size: 12px; color: var(--text-dim); font-weight: 400; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { text-align: left; color: var(--text-dim); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+        td { padding: 8px; border-bottom: 1px solid rgba(30,30,53,0.5); }
+        tr:hover { background: rgba(255,255,255,0.02); }
+
+        .badge {
+            padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600;
+        }
+        .badge-approve { background: rgba(34,197,94,0.15); color: var(--green); }
+        .badge-reject { background: rgba(239,68,68,0.15); color: var(--red); }
+        .badge-call { background: rgba(34,197,94,0.12); color: var(--green); }
+        .badge-put { background: rgba(239,68,68,0.12); color: var(--red); }
+        .badge-open { background: rgba(59,130,246,0.15); color: var(--blue); }
+        .badge-closed { background: rgba(120,120,160,0.15); color: var(--text-dim); }
+        .badge-bull { background: rgba(34,197,94,0.15); color: var(--green); }
+        .badge-bear { background: rgba(239,68,68,0.15); color: var(--red); }
+
+        .thesis-text { max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 12px; color: var(--text-dim); }
+        
+        .score-bar {
+            height: 6px; border-radius: 3px; background: var(--border); overflow: hidden;
+            min-width: 60px; margin-top: 2px;
+        }
+        .score-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+
+        /* Trade row expansion */
+        .trade-row { cursor: pointer; }
+        .trade-detail-row { display: none; }
+        .trade-detail-row.show { display: table-row; }
+        .trade-detail-row td {
+            background: rgba(0,0,0,0.2); padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        .detail-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px; font-size: 12px;
+        }
+        .detail-item .d-label { color: var(--text-dim); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .detail-item .d-value { color: var(--text); margin-top: 2px; }
+
+        /* Run separator */
+        .run-separator {
+            background: rgba(59,130,246,0.05); border-left: 3px solid var(--blue);
+            padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0;
+            font-size: 12px; color: var(--text-dim);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 12px; }
+            .stat-card .value { font-size: 20px; }
+            table { font-size: 11px; }
+            th, td { padding: 6px 4px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ── HEADER ────────────────────────────────────────────── -->
+    <div class="header">
+        <div>
+            <h1>MOMENTUM INTELLIGENCE AGENT</h1>
+            <div class="subtitle">Autonomous AI Trading — K2 Analyst + Qwen Critic + Deterministic Risk</div>
+        </div>
+        <div style="text-align:right;">
+            <span class="regime-badge regime-{{ regime.regime }}">{{ regime.regime }}</span>
+            <div class="updated">Updated: {{ now }}</div>
+        </div>
+    </div>
+
+    <!-- ── PORTFOLIO HEADER ─────────────────────────────────── -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="label">Portfolio Value</div>
+            <div class="value value-neutral">${{ "{:,.0f}".format(equity) }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Daily P&amp;L</div>
+            <div class="value {{ 'value-positive' if daily_pnl >= 0 else 'value-negative' }}">
+                {{ format_pnl(daily_pnl) }}
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Total P&amp;L</div>
+            <div class="value {{ 'value-positive' if total_pnl >= 0 else 'value-negative' }}">
+                {{ format_pnl(total_pnl) }}
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Open Positions</div>
+            <div class="value value-neutral">{{ open_positions }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Win Rate</div>
+            <div class="value {{ 'value-positive' if win_rate >= 0.5 else 'value-negative' }}">
+                {{ "{:.0%}".format(win_rate) }}
+            </div>
+            <div class="sub">{{ total_trades }} closed trades</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Avg Trade</div>
+            <div class="value {{ 'value-positive' if avg_trade >= 0 else 'value-negative' }}">
+                {{ format_pnl(avg_trade) }}
+            </div>
+            <div class="sub">W: {{ format_pnl(avg_winner) }} / L: {{ format_pnl(avg_loser) }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">K2 Confidence</div>
+            <div class="value value-neutral">{{ "{:.0%}".format(avg_k2_conf) }}</div>
+            <div class="sub">avg across candidates</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Qwen Approve Rate</div>
+            <div class="value {{ 'value-positive' if approve_rate >= 0.3 else 'value-negative' }}">
+                {{ "{:.0%}".format(approve_rate) }}
+            </div>
+            <div class="sub">{{ candidates|length }} candidates analyzed</div>
+        </div>
+    </div>
+
+    <!-- ── RUN CYCLES ───────────────────────────────────────── -->
+    {% if candidates_by_run %}
+    <div class="section">
+        <h2>Recent Trading Cycles <span class="count">({{ candidates_by_run|length }} runs)</span></h2>
+        {% for run_ts, run_candidates in candidates_by_run.items() %}
+        <div class="run-separator">
+            Cycle: {{ run_ts }} — {{ run_candidates|length }} candidates analyzed
+            {% set run_approved = run_candidates|selectattr('approved', 'equalto', true)|list %}
+            — {{ run_approved|length }} approved by AI
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Direction</th>
+                    <th>Momentum</th>
+                    <th>K2 Conf</th>
+                    <th>Qwen</th>
+                    <th>Qwen Conf</th>
+                    <th>Final</th>
+                    <th>Thesis</th>
+                    <th>Decision</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for c in run_candidates %}
+                <tr>
+                    <td style="font-weight:700;">{{ c.symbol }}</td>
+                    <td>
+                        <span class="badge {{ 'badge-call' if c.direction == 'CALL' else 'badge-put' }}">
+                            {{ c.direction }}
+                        </span>
+                    </td>
+                    <td>
+                        <div style="font-weight:600;">{{ "%.0f"|format(c.momentum_score) }}</div>
+                        <div class="score-bar"><div class="score-fill" style="width:{{ c.momentum_score }}%;background:{{ '#22c55e' if c.momentum_score >= 75 else '#f59e0b' if c.momentum_score >= 60 else '#ef4444' }};"></div></div>
+                    </td>
+                    <td>
+                        <div style="font-weight:600;">{{ "%.0f"|format(c.k2_confidence * 100) }}%</div>
+                        <div class="score-bar"><div class="score-fill" style="width:{{ c.k2_confidence * 100 }}%;background:{{ '#22c55e' if c.k2_confidence >= 0.7 else '#f59e0b' if c.k2_confidence >= 0.5 else '#ef4444' }};"></div></div>
+                    </td>
+                    <td><span class="badge {{ 'badge-approve' if c.qwen_recommendation == 'APPROVE' else 'badge-reject' }}">{{ c.qwen_recommendation }}</span></td>
+                    <td>{{ "%.0f"|format(c.qwen_confidence * 100) }}%</td>
+                    <td style="font-weight:700;">{{ "%.2f"|format(c.final_score) }}</td>
+                    <td><div class="thesis-text" title="{{ c.thesis }}">{{ c.thesis[:60] }}{% if c.thesis|length > 60 %}...{% endif %}</div></td>
+                    <td><span class="badge {{ 'badge-approve' if c.approved else 'badge-reject' }}">{{ 'APPROVED' if c.approved else 'REJECTED' }}</span></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="section">
+        <h2>Candidate Evaluations</h2>
+        <p style="color: var(--text-dim); padding: 20px; text-align: center;">
+            No candidates yet. Run <code>python main.py</code> to generate evaluations.
+        </p>
+    </div>
+    {% endif %}
+
+    <!-- ── OPEN POSITIONS ───────────────────────────────────── -->
+    <div class="section">
+        <h2>Open Positions <span class="count">({{ open_trades|length }})</span></h2>
+        {% if open_trades %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Option</th>
+                    <th>Direction</th>
+                    <th>Qty</th>
+                    <th>Entry Price</th>
+                    <th>Entry Date</th>
+                    <th>Holding Days</th>
+                    <th>Thesis</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for t in open_trades %}
+                <tr>
+                    <td style="font-weight:700;">{{ t.symbol }}</td>
+                    <td style="font-family:monospace;font-size:11px;">{{ t.option_symbol[:20] }}</td>
+                    <td><span class="badge {{ 'badge-call' if t.direction == 'CALL' else 'badge-put' }}">{{ t.direction }}</span></td>
+                    <td>{{ t.quantity }}</td>
+                    <td>${{ "%.2f"|format(safe_float(t.entry_price)) }}</td>
+                    <td>{{ t.entry_time[:10] if t.entry_time }}</td>
+                    <td>{{ ((now[:10] ~ ' 00:00:00') if now else '') | default('0', true) }}</td>
+                    <td><div class="thesis-text" title="{{ t.thesis }}">{{ t.thesis[:50] }}{% if t.thesis|length > 50 %}...{% endif %}</div></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="color: var(--text-dim); padding: 20px; text-align: center;">No open positions.</p>
+        {% endif %}
+    </div>
+
+    <!-- ── TRADE HISTORY ─────────────────────────────────────── -->
+    <div class="section">
+        <h2>Trade History <span class="count">({{ history|length }} trades)</span></h2>
+        {% if history %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Option</th>
+                    <th>Dir</th>
+                    <th>Qty</th>
+                    <th>Entry</th>
+                    <th>Exit</th>
+                    <th>P&amp;L</th>
+                    <th>Days</th>
+                    <th>Exit Reason</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for t in (history|reverse) %}
+                <tr class="trade-row" onclick="toggleDetail('trade-{{ loop.index }}')">
+                    <td style="font-weight:700;">{{ t.symbol }}</td>
+                    <td style="font-family:monospace;font-size:11px;">{{ t.option_symbol[:18] }}</td>
+                    <td><span class="badge {{ 'badge-call' if t.direction == 'CALL' else 'badge-put' }}">{{ t.direction }}</span></td>
+                    <td>{{ t.quantity }}</td>
+                    <td>${{ "%.2f"|format(safe_float(t.entry_price)) }}</td>
+                    <td>${{ "%.2f"|format(safe_float(t.exit_price)) if t.exit_price else '—' }}</td>
+                    <td class="{{ 'value-positive' if safe_float(t.pnl) >= 0 else 'value-negative' }}" style="font-weight:700;">
+                        {{ format_pnl(safe_float(t.pnl)) }}
+                    </td>
+                    <td>{{ t.holding_days }}</td>
+                    <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;" title="{{ t.exit_reason }}">
+                        {{ t.exit_reason[:40] }}{% if t.exit_reason|length > 40 %}...{% endif %}
+                    </td>
+                    <td><span class="badge badge-closed">CLOSED</span></td>
+                </tr>
+                <tr class="trade-detail-row" id="trade-{{ loop.index }}">
+                    <td colspan="10">
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <div class="d-label">Trade ID</div>
+                                <div class="d-value" style="font-family:monospace;font-size:10px;">{{ t.trade_id }}</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="d-label">Confidence</div>
+                                <div class="d-value">{{ "%.0f"|format(safe_float(t.confidence) * 100) }}%</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="d-label">Entry Momentum Rank</div>
+                                <div class="d-value">{{ t.entry_momentum_rank }}</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="d-label">Expected Holding</div>
+                                <div class="d-value">{{ t.expected_holding_days }} days</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="d-label">Order ID</div>
+                                <div class="d-value" style="font-family:monospace;font-size:10px;">{{ t.order_id[:16] }}{% if t.order_id|length > 16 %}...{% endif %}</div>
+                            </div>
+                        </div>
+                        <div class="detail-item" style="margin-top:8px;">
+                            <div class="d-label">Thesis</div>
+                            <div class="d-value" style="font-size:12px;color:var(--text);">{{ t.thesis }}</div>
+                        </div>
+                        <div class="detail-item" style="margin-top:4px;">
+                            <div class="d-label">Invalidation</div>
+                            <div class="d-value" style="font-size:11px;color:var(--amber);">{{ t.invalidation }}</div>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="color: var(--text-dim); padding: 20px; text-align: center;">No trades yet. Run the pipeline to generate trades.</p>
+        {% endif %}
+    </div>
+
+    <!-- ── MODEL INFO ────────────────────────────────────────── -->
+    <div class="section">
+        <h2>System Info</h2>
+        <div class="detail-grid">
+            <div class="detail-item">
+                <div class="d-label">Primary Analyst</div>
+                <div class="d-value">{{ config.models.primary.model }}</div>
+            </div>
+            <div class="detail-item">
+                <div class="d-label">Adversarial Critic</div>
+                <div class="d-value">{{ config.models.critic.model }}</div>
+            </div>
+            <div class="detail-item">
+                <div class="d-label">Max Risk / Trade</div>
+                <div class="d-value">{{ "%.0f"|format(config.risk.max_risk_per_trade * 100) }}%</div>
+            </div>
+            <div class="detail-item">
+                <div class="d-label">Max Positions</div>
+                <div class="d-value">{{ config.risk.max_open_positions }}</div>
+            </div>
+            <div class="detail-item">
+                <div class="d-label">Options DTE Range</div>
+                <div class="d-value">{{ config.options.min_dte }}-{{ config.options.max_dte }} days</div>
+            </div>
+            <div class="detail-item">
+                <div class="d-label">Target Delta</div>
+                <div class="d-value">{{ "%.2f"|format(config.options.target_delta_min) }}-{{ "%.2f"|format(config.options.target_delta_max) }}</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleDetail(id) {
+    var el = document.getElementById(id);
+    if (el) {
+        el.classList.toggle('show');
+    }
+}
+</script>
+</body>
+</html>
