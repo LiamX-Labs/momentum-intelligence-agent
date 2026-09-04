@@ -679,7 +679,68 @@
           "Earnings revision >$0.29 (latest EPS) or regulatory clarity announcement"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 62 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.61 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          true,
+          "OK"
+        ],
+        [
+          "Position sizing",
+          true,
+          "10 contracts at $100/contract (total $1000)"
+        ],
+        [
+          "Max risk/trade",
+          true,
+          "OK"
+        ],
+        [
+          "Portfolio premium",
+          true,
+          "OK"
+        ],
+        [
+          "Symbol exposure",
+          true,
+          "OK"
+        ],
+        [
+          "Earnings risk",
+          true,
+          "No earnings in holding period (next: 2026-10-28)"
+        ],
+        [
+          "Qwen risk score",
+          true,
+          "Qwen risk score 0.68 <= 0.85"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 61.8,
@@ -725,7 +786,15 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": true,
+      "risk_reason": "All gates passed",
+      "position_size": {
+        "max_contracts": 10,
+        "cost_per_contract": 100.0,
+        "total_cost": 1000.0,
+        "risk_pct": 0.01
+      }
     },
     {
       "timestamp": "2026-09-04T17:14:26.680745",
@@ -779,7 +848,68 @@
           "Negative regulatory headline emerges with volume spike above 1.08 (2x current rel_volume)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 59 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.62 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          true,
+          "OK"
+        ],
+        [
+          "Position sizing",
+          true,
+          "10 contracts at $100/contract (total $1000)"
+        ],
+        [
+          "Max risk/trade",
+          true,
+          "OK"
+        ],
+        [
+          "Portfolio premium",
+          true,
+          "OK"
+        ],
+        [
+          "Symbol exposure",
+          true,
+          "OK"
+        ],
+        [
+          "Earnings risk",
+          true,
+          "No earnings in holding period (next: 2026-10-29)"
+        ],
+        [
+          "Qwen risk score",
+          true,
+          "Qwen risk score 0.74 <= 0.85"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 59.5,
@@ -825,7 +955,15 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": true,
+      "risk_reason": "All gates passed",
+      "position_size": {
+        "max_contracts": 10,
+        "cost_per_contract": 100.0,
+        "total_cost": 1000.0,
+        "risk_pct": 0.01
+      }
     },
     {
       "timestamp": "2026-09-04T17:15:32.763043",
@@ -880,7 +1018,68 @@
           "Positive resolution of regulatory concerns with concrete timeline"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 57 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.58 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          true,
+          "OK"
+        ],
+        [
+          "Position sizing",
+          true,
+          "10 contracts at $100/contract (total $1000)"
+        ],
+        [
+          "Max risk/trade",
+          true,
+          "OK"
+        ],
+        [
+          "Portfolio premium",
+          true,
+          "OK"
+        ],
+        [
+          "Symbol exposure",
+          true,
+          "OK"
+        ],
+        [
+          "Earnings risk",
+          true,
+          "No earnings in holding period (next: 2026-11-02)"
+        ],
+        [
+          "Qwen risk score",
+          true,
+          "Qwen risk score 0.68 <= 0.85"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 57.3,
@@ -926,7 +1125,15 @@
           "catalyst_strength": 0.5
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": true,
+      "risk_reason": "All gates passed",
+      "position_size": {
+        "max_contracts": 10,
+        "cost_per_contract": 100.0,
+        "total_cost": 1000.0,
+        "risk_pct": 0.01
+      }
     },
     {
       "timestamp": "2026-09-04T17:17:11.015229",
@@ -1076,7 +1283,68 @@
           "Gold price drops >3% in single session (per thesis correlation assumption)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.62)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.68 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 55 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.70 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          true,
+          "OK"
+        ],
+        [
+          "Position sizing",
+          true,
+          "10 contracts at $100/contract (total $1000)"
+        ],
+        [
+          "Max risk/trade",
+          true,
+          "OK"
+        ],
+        [
+          "Portfolio premium",
+          true,
+          "OK"
+        ],
+        [
+          "Symbol exposure",
+          true,
+          "OK"
+        ],
+        [
+          "Earnings risk",
+          true,
+          "No earnings in holding period (next: 2026-10-22)"
+        ],
+        [
+          "Qwen risk score",
+          true,
+          "Qwen risk score 0.62 <= 0.85"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 54.9,
@@ -1122,7 +1390,15 @@
           "catalyst_strength": 1.0
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": true,
+      "risk_reason": "All gates passed",
+      "position_size": {
+        "max_contracts": 10,
+        "cost_per_contract": 100.0,
+        "total_cost": 1000.0,
+        "risk_pct": 0.01
+      }
     },
     {
       "timestamp": "2026-09-04T17:19:13.099321",
@@ -1180,7 +1456,68 @@
           "RSI closes below 55 (current RSI 66.6)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 53 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.63 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          true,
+          "OK"
+        ],
+        [
+          "Position sizing",
+          true,
+          "10 contracts at $100/contract (total $1000)"
+        ],
+        [
+          "Max risk/trade",
+          true,
+          "OK"
+        ],
+        [
+          "Portfolio premium",
+          true,
+          "OK"
+        ],
+        [
+          "Symbol exposure",
+          true,
+          "OK"
+        ],
+        [
+          "Earnings risk",
+          true,
+          "No earnings in holding period (next: 2026-10-28)"
+        ],
+        [
+          "Qwen risk score",
+          true,
+          "Qwen risk score 0.68 <= 0.85"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 53.5,
@@ -1226,7 +1563,15 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": true,
+      "risk_reason": "All gates passed",
+      "position_size": {
+        "max_contracts": 10,
+        "cost_per_contract": 100.0,
+        "total_cost": 1000.0,
+        "risk_pct": 0.01
+      }
     },
     {
       "timestamp": "2026-09-04T17:20:04.807432",
@@ -1385,7 +1730,38 @@
           "Volume z-score exceeds +2.0 on down days indicating distribution"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.65)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.68 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 52 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.63 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 51.6,
@@ -1431,7 +1807,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:22:22.665198",
@@ -1581,7 +1959,38 @@
           "Break of 10-day low ($X.XX) with volume > 1.5x average (use actual 10-day low price if available)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.60)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 51 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.69 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 51.0,
@@ -1627,7 +2036,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:24:28.286828",
@@ -1685,7 +2096,38 @@
           "Relative strength turns negative for 2 consecutive days"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.68)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.72 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.73 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 50.5,
@@ -1731,7 +2173,9 @@
           "catalyst_strength": 1.0
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:25:45.190737",
@@ -1788,7 +2232,28 @@
           "Regulatory catalyst resolves with definitive positive outcome (e.g., FDA approval or settlement)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.38)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.42 below minimum 0.5 \u2014 DEMO override"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          false,
+          "Final score 0.49 below 0.50"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 50.4,
@@ -1834,7 +2299,9 @@
           "catalyst_strength": 0.66
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Final score too low"
     },
     {
       "timestamp": "2026-09-04T17:28:39.169633",
@@ -1891,7 +2358,38 @@
           "Price breaks below 20-day return trend line support (17.2% cumulative return threshold)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.67 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.71 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 50.4,
@@ -1937,7 +2435,9 @@
           "catalyst_strength": 0.84
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:29:41.943239",
@@ -1995,7 +2495,38 @@
           "Price closes below 5-day EMA (calculated from 11.3% 5-day return)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.60 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 50.1,
@@ -2041,7 +2572,9 @@
           "catalyst_strength": 0.96
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:31:19.141319",
@@ -2096,7 +2629,38 @@
           "Announced M&A deal closure or favorable regulatory resolution"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.60 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 49.9,
@@ -2142,7 +2706,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:32:57.627105",
@@ -2198,7 +2764,38 @@
           "Relative volume spikes above 1.5x on a down day"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.65 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 49.8,
@@ -2244,7 +2841,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:33:53.743006",
@@ -2299,7 +2898,38 @@
           "Break of prior 5-day low ($X.XX) on expanding volume (>1.8x 20d avg)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.56 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 49.7,
@@ -2345,7 +2975,9 @@
           "catalyst_strength": 0.8
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:35:00.031807",
@@ -2402,7 +3034,38 @@
           "RSI breaks below 50"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 50 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.59 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 49.6,
@@ -2448,7 +3111,9 @@
           "catalyst_strength": 1.0
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:35:42.802633",
@@ -2503,7 +3168,38 @@
           "Volume remains below 50-day average for 3 consecutive sessions"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 49 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.63 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 49.5,
@@ -2549,7 +3245,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:36:36.361321",
@@ -2607,7 +3305,38 @@
           "Relative volume spikes above 2.0 with negative 1-day price action"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.62)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 49 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.66 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 48.7,
@@ -2653,7 +3382,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:37:53.240087",
@@ -2710,7 +3441,38 @@
           "Break below 20-day EMA with confirmation on 1.5x average volume"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 48 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.54 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 48.4,
@@ -2756,7 +3518,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:38:44.356065",
@@ -2814,7 +3578,38 @@
           "Debt/EBITDA ratio exceeds 5.5x due to new M&A activity"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 48 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.61 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 48.2,
@@ -2860,7 +3655,9 @@
           "catalyst_strength": 0.85
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:41:11.044990",
@@ -2916,7 +3713,38 @@
           "Break of 3-day low on expanding volume (>1.0x average)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 48 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.69 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 48.0,
@@ -2962,7 +3790,9 @@
           "catalyst_strength": 1.0
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:44:06.924175",
@@ -3020,7 +3850,38 @@
           "RSI closes below 45.0"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 48 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.55 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 47.8,
@@ -3066,7 +3927,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:44:58.542923",
@@ -3227,7 +4090,38 @@
           "Positive earnings pre-announcement (unlikely within 5-day holding period due to Nov 2026 date)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 47 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.51 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 47.2,
@@ -3273,7 +4167,9 @@
           "catalyst_strength": 0.7
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:48:16.742741",
@@ -3328,7 +4224,38 @@
           "RSI dropping below 50 (current RSI: 56.4)"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 47 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.66 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 47.1,
@@ -3374,7 +4301,9 @@
           "catalyst_strength": 0.54
         }
       },
-      "reused": false
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     },
     {
       "timestamp": "2026-09-04T17:49:45.190833",
@@ -3429,7 +4358,38 @@
           "M&A announcement with specific terms and premium"
         ]
       },
-      "gates": [],
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.48)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 47 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.56 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
       "evidence": {
         "momentum": {
           "momentum_score": 47.0,
@@ -3475,10 +4435,2389 @@
           "catalyst_strength": 1.0
         }
       },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:51:27.218115",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "MSFT",
+      "momentum_score": 47.0,
+      "direction": "CALL",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.55,
+      "final_score": 0.588,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "MSFT exhibits strong intermediate-term momentum with 31.2% return over 10 days and 25.4% over 20 days, suggesting a powerful trend following likely AI/cloud infrastructure tailwinds. The M&A catalyst flag indicates potential deal activity that could sustain interest. However, momentum is decelerating sharply (5-day return of only 1.6% vs. 10-day 31.2%), volume is severely depressed at 0.18 relative average with a -1.16 z-score, and RSI at 65.1 shows cooling from likely overbought levels. This creates a tactical long opportunity for a momentum continuation play if volume returns, but with tight risk management given the exhaustion signals. The 1-3 day window captures potential re-acceleration or quick exit if breakdown occurs.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "MSFT",
+        "direction": "CALL",
+        "confidence": 0.58,
+        "thesis": "MSFT exhibits strong intermediate-term momentum with 31.2% return over 10 days and 25.4% over 20 days, suggesting a powerful trend following likely AI/cloud infrastructure tailwinds. The M&A catalyst flag indicates potential deal activity that could sustain interest. However, momentum is decelerating sharply (5-day return of only 1.6% vs. 10-day 31.2%), volume is severely depressed at 0.18 relative average with a -1.16 z-score, and RSI at 65.1 shows cooling from likely overbought levels. This creates a tactical long opportunity for a momentum continuation play if volume returns, but with tight risk management given the exhaustion signals. The 1-3 day window captures potential re-acceleration or quick exit if breakdown occurs.",
+        "momentum_quality": 0.45,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.6,
+        "risk_level": 0.62,
+        "expected_holding_days": 3,
+        "invalidation": "Close below the 10-day moving average or volume-weighted average price; RSI falling below 55; break of 3-day low on above-average volume",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Volume collapse (-1.16 z-score, 0.18 relative volume) indicates institutional disengagement and potential false breakout",
+          "Momentum deceleration from 31.2% (10d) to 1.6% (5d) suggests trend exhaustion without immediate catalyst refresh",
+          "Extended valuation (PE 28x, forward PE 21x) leaves limited margin for error if growth expectations moderate"
+        ]
+      },
+      "qwen": {
+        "symbol": "MSFT",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.55,
+        "risk_score": 0.65,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Volume collapse (rel_volume 0.18, z-score -1.16) suggests lack of institutional conviction",
+          "Momentum deceleration (5D 1.6% vs 10D 31.2%) indicates potential trend exhaustion",
+          "Forward PE (21x) and PE (28x) may limit upside if growth expectations moderate"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Close below 10-day moving average (calculated from 10D return of 31.2%)",
+          "RSI_14 falls below 55 (from current 65.1)",
+          "Break of 3-day low with volume > 1.2x rel_volume (0.18 baseline)"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 47 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.59 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 47.0,
+          "momentum_rank": 33,
+          "return_5d_pct": 1.6,
+          "return_10d_pct": 31.2,
+          "return_20d_pct": 25.4,
+          "relative_strength_5d_pct": 2.1,
+          "rel_volume": 0.18,
+          "volume_zscore": -1.16,
+          "rsi_14": 65.1,
+          "atr_pct": 1.65
+        },
+        "fundamentals": {
+          "fundamental_quality": 1.0,
+          "revenue_growth": 0.177,
+          "eps_growth": 0.317,
+          "gross_margin": 0.67944,
+          "operating_margin": 0.45111,
+          "roe": 0.34039003,
+          "forward_pe": 21.338142,
+          "pe_ratio": 28.00724,
+          "ev_to_ebitda": 19.769,
+          "fcf_yield": 0.00443,
+          "ebitda": 194237005824.0,
+          "total_debt": 128812998656.0,
+          "debt_to_ebitda": 0.66,
+          "debt_to_equity": 0.2912,
+          "current_ratio": 1.23,
+          "net_income": 133749000000.0,
+          "revenue": 331839000000.0
+        },
+        "earnings": {
+          "latest_eps": 4.81,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.313,
+          "next_earnings_date": "2026-10-28"
+        },
+        "catalysts": {
+          "catalyst_flags": "M_A",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:52:27.297020",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "FDS",
+      "momentum_score": 46.5,
+      "direction": "PUT",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.52,
+      "final_score": 0.555,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "FDS shows classic divergence between price momentum and volume confirmation. The stock has rallied 22.6% over 20 days and 20.4% over 10 days on severely depressed relative volume (0.1x) and negative volume z-score (-1.93), indicating institutional distribution rather than accumulation. This thin-volume rally into mixed catalyst territory\u2014analyst upgrades and earnings beats countered by lowered guidance, regulatory concerns, and an active lawsuit\u2014creates an asymmetric short opportunity. The RSI at 58.1 is not overbought but the momentum score of 46.5 suggests deceleration, while fundamentals show declining EPS growth (-9.6% and -14.7% quarterly) that contradicts the price advance. The combination of exhausted volume, negative earnings trajectory, and legal overhang suggests a mean-reversion pullback within 3-6 days.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "FDS",
+        "direction": "PUT",
+        "confidence": 0.58,
+        "thesis": "FDS shows classic divergence between price momentum and volume confirmation. The stock has rallied 22.6% over 20 days and 20.4% over 10 days on severely depressed relative volume (0.1x) and negative volume z-score (-1.93), indicating institutional distribution rather than accumulation. This thin-volume rally into mixed catalyst territory\u2014analyst upgrades and earnings beats countered by lowered guidance, regulatory concerns, and an active lawsuit\u2014creates an asymmetric short opportunity. The RSI at 58.1 is not overbought but the momentum score of 46.5 suggests deceleration, while fundamentals show declining EPS growth (-9.6% and -14.7% quarterly) that contradicts the price advance. The combination of exhausted volume, negative earnings trajectory, and legal overhang suggests a mean-reversion pullback within 3-6 days.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.52,
+        "catalyst_strength": 0.45,
+        "risk_level": 0.62,
+        "expected_holding_days": 4,
+        "invalidation": "Daily close above 10-day high on volume >150% of 20-day average; RSI breakout above 65 with sustained momentum; resolution of lawsuit in company's favor",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Thin float and low volume can amplify upside squeezes on any positive news flow",
+          "Analyst upgrade momentum may persist despite weak volume if institutional rebalancing continues",
+          "Lawsuit resolution uncertainty creates binary event risk that could gap price either direction"
+        ]
+      },
+      "qwen": {
+        "symbol": "FDS",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.52,
+        "risk_score": 0.67,
+        "momentum_assessment": "EXHAUSTED",
+        "fundamental_assessment": "NEGATIVE",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Rally is occurring on severely depressed volume (0.1x) and negative volume z-score (-1.93), suggesting weak institutional support",
+          "EPS growth is declining (-9.6% and -14.7% quarterly), contradicting the price advance",
+          "Lawsuit and regulatory concerns introduce binary event risk that could move price independently of fundamentals"
+        ],
+        "contradictions": [
+          "Fundamental EPS growth is negative, but price has advanced 22.6% over 20 days",
+          "Volume z-score (-1.93) and relative volume (0.1x) contradict the thesis of institutional accumulation"
+        ],
+        "invalidation_conditions": [
+          "Daily close above 10-day high on volume >150% of 20-day average",
+          "RSI closes above 65 with sustained momentum above 50",
+          "Lawsuit resolution announced in company's favor within 4 days"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 47 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.56 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 46.5,
+          "momentum_rank": 34,
+          "return_5d_pct": 7.0,
+          "return_10d_pct": 20.4,
+          "return_20d_pct": 22.6,
+          "relative_strength_5d_pct": 7.4,
+          "rel_volume": 0.1,
+          "volume_zscore": -1.93,
+          "rsi_14": 58.1,
+          "atr_pct": 2.48
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.78,
+          "revenue_growth": 0.064,
+          "eps_growth": -0.096,
+          "gross_margin": 0.51382,
+          "operating_margin": 0.30542,
+          "roe": 0.27032,
+          "forward_pe": 15.369297,
+          "pe_ratio": 19.955532,
+          "ev_to_ebitda": 13.294,
+          "fcf_yield": 0.057655,
+          "ebitda": 932542016.0,
+          "total_debt": 1570642048.0,
+          "debt_to_ebitda": 1.68,
+          "debt_to_equity": 0.7728,
+          "current_ratio": 0.683,
+          "net_income": 597040000.0,
+          "revenue": 2321748000.0
+        },
+        "earnings": {
+          "latest_eps": 3.5,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.147,
+          "next_earnings_date": "2026-09-30"
+        },
+        "catalysts": {
+          "catalyst_flags": "analyst_upgrade,earnings_beat,guidance_lowered,regulatory",
+          "concern_flags": "lawsuit",
+          "headline_count": 10,
+          "catalyst_strength": 0.65
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:53:19.935890",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "ABNB",
+      "momentum_score": 46.5,
+      "direction": "CALL",
+      "k2_confidence": 0.62,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.55,
+      "final_score": 0.558,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "ABNB exhibits strong intermediate-term momentum with 28.9% and 41.0% returns over 10 and 20 days respectively, despite a modest -1.5% pullback over 5 days that appears to be healthy consolidation rather than exhaustion. The stock trades in a confirmed bull regime with analyst upgrade catalyst support. Volume contraction (rel_volume 0.25, volume_zscore -1.09) during this brief pause suggests supply absorption rather than distribution, potentially setting up for a continuation move. RSI at 62.8 indicates room to run before overbought conditions. Strong fundamentals including 33.4% EPS growth, 16.5% revenue growth, and robust 82.9% gross margin provide fundamental backing for the technical setup.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "ABNB",
+        "direction": "CALL",
+        "confidence": 0.62,
+        "thesis": "ABNB exhibits strong intermediate-term momentum with 28.9% and 41.0% returns over 10 and 20 days respectively, despite a modest -1.5% pullback over 5 days that appears to be healthy consolidation rather than exhaustion. The stock trades in a confirmed bull regime with analyst upgrade catalyst support. Volume contraction (rel_volume 0.25, volume_zscore -1.09) during this brief pause suggests supply absorption rather than distribution, potentially setting up for a continuation move. RSI at 62.8 indicates room to run before overbought conditions. Strong fundamentals including 33.4% EPS growth, 16.5% revenue growth, and robust 82.9% gross margin provide fundamental backing for the technical setup.",
+        "momentum_quality": 0.68,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.55,
+        "risk_level": 0.58,
+        "expected_holding_days": 5,
+        "invalidation": "Close below 20-day EMA support; volume spike above 2x average on down days breaking the 5-day low; RSI breakdown below 55 with momentum score dropping below 40",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Extended valuation metrics (PE 41.2, EV/EBITDA 36.1) leave limited margin for error on any fundamental disappointment",
+          "Low relative volume suggests institutional participation may be fading, reducing conviction in continuation",
+          "Earnings not until November 2026 creates a catalyst desert with no near-term fundamental events to drive repricing"
+        ]
+      },
+      "qwen": {
+        "symbol": "ABNB",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.55,
+        "risk_score": 0.65,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Extended valuation metrics (PE 41.2, EV/EBITDA 36.1) leave limited margin for error on any fundamental disappointment",
+          "Low relative volume (0.25) suggests potential fading institutional participation",
+          "Earnings not until November 2026 creates a catalyst desert with no near-term fundamental events"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Close below 20-day EMA support",
+          "Volume spike above 2x average on down days breaking the 5-day low",
+          "RSI breakdown below 55 with momentum score dropping below 40"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 46 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.56 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 46.5,
+          "momentum_rank": 35,
+          "return_5d_pct": -1.5,
+          "return_10d_pct": 28.9,
+          "return_20d_pct": 41.0,
+          "relative_strength_5d_pct": -1.1,
+          "rel_volume": 0.25,
+          "volume_zscore": -1.09,
+          "rsi_14": 62.8,
+          "atr_pct": 1.78
+        },
+        "fundamentals": {
+          "fundamental_quality": 1.0,
+          "revenue_growth": 0.165,
+          "eps_growth": 0.334,
+          "gross_margin": 0.82901,
+          "operating_margin": 0.21009001,
+          "roe": 0.34542,
+          "forward_pe": 29.700954,
+          "pe_ratio": 41.164787,
+          "ev_to_ebitda": 36.091,
+          "fcf_yield": 0.029368,
+          "ebitda": 2760999936.0,
+          "total_debt": 2496000000.0,
+          "debt_to_ebitda": 0.9,
+          "debt_to_equity": 0.32,
+          "current_ratio": 1.408,
+          "net_income": 2511000000.0,
+          "revenue": 12241000000.0
+        },
+        "earnings": {
+          "latest_eps": 1.37,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.271,
+          "next_earnings_date": "2026-11-05"
+        },
+        "catalysts": {
+          "catalyst_flags": "analyst_upgrade",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:54:35.843994",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "GILD",
+      "momentum_score": 46.3,
+      "direction": "CALL",
+      "k2_confidence": 0.61,
+      "qwen_recommendation": "REJECT",
+      "qwen_confidence": 0.42,
+      "final_score": 0.638,
+      "approved": false,
+      "reject_reason": "Qwen rejected: recommendation=REJECT, thesis_valid=False",
+      "thesis": "GILD exhibits strong price momentum with 23.4% returns over 20 days and accelerating relative strength, supported by positive analyst upgrades and regulatory catalysts. The stock trades at a reasonable forward P/E of 15.2 with solid FCF yield of 5.2%, suggesting valuation support for further upside. However, extremely low relative volume (0.16x) and negative volume z-score (-2.29) indicate this rally lacks institutional participation, creating a higher-risk setup that could reverse quickly if volume doesn't confirm. The 1-5 day window captures potential continuation from catalysts while limiting exposure to volume-driven reversals.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "GILD",
+        "direction": "CALL",
+        "confidence": 0.61,
+        "thesis": "GILD exhibits strong price momentum with 23.4% returns over 20 days and accelerating relative strength, supported by positive analyst upgrades and regulatory catalysts. The stock trades at a reasonable forward P/E of 15.2 with solid FCF yield of 5.2%, suggesting valuation support for further upside. However, extremely low relative volume (0.16x) and negative volume z-score (-2.29) indicate this rally lacks institutional participation, creating a higher-risk setup that could reverse quickly if volume doesn't confirm. The 1-5 day window captures potential continuation from catalysts while limiting exposure to volume-driven reversals.",
+        "momentum_quality": 0.58,
+        "fundamental_quality": 0.72,
+        "catalyst_strength": 0.75,
+        "risk_level": 0.71,
+        "expected_holding_days": 3,
+        "invalidation": "Relative volume fails to exceed 0.5x within 2 sessions; price closes below 5-day EMA; RSI drops below 50",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Volume drought suggests weak institutional conviction, making the rally vulnerable to rapid reversal",
+          "High debt-to-equity (2.23x) and negative ROE (-20.7%) indicate balance sheet stress that could amplify downside",
+          "Recent EPS of -$8.45 with no clear turnaround timeline creates fundamental uncertainty beneath the momentum"
+        ]
+      },
+      "qwen": {
+        "symbol": "GILD",
+        "recommendation": "REJECT",
+        "thesis_valid": false,
+        "adjusted_confidence": 0.42,
+        "risk_score": 0.78,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "NEGATIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Contradiction: Net income is positive ($8.5B) but latest EPS is -$8.45, indicating potential accounting anomalies or share count distortions",
+          "High debt-to-equity (2.23x) and negative ROE (-20.7%) suggest structural balance sheet weaknesses",
+          "Relative volume (0.16x) and volume z-score (-2.29) indicate lack of institutional conviction in the rally",
+          "Negative EPS (-$8.45) with no clear turnaround timeline creates fundamental uncertainty beneath momentum"
+        ],
+        "contradictions": [
+          "Net income ($8.5B) is positive while EPS is -$8.45, implying a fundamental inconsistency that undermines valuation metrics"
+        ],
+        "invalidation_conditions": [
+          "Relative volume fails to exceed 0.5x within 2 sessions",
+          "Price closes below 5-day EMA",
+          "RSI drops below 50"
+        ]
+      },
+      "gates": [],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 46.3,
+          "momentum_rank": 36,
+          "return_5d_pct": 8.9,
+          "return_10d_pct": 15.7,
+          "return_20d_pct": 23.4,
+          "relative_strength_5d_pct": 9.4,
+          "rel_volume": 0.16,
+          "volume_zscore": -2.29,
+          "rsi_14": 57.0,
+          "atr_pct": 1.64
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.88,
+          "revenue_growth": 0.102,
+          "eps_growth": null,
+          "gross_margin": 0.79603994,
+          "operating_margin": 0.33679,
+          "roe": -0.2068,
+          "forward_pe": 15.24111,
+          "pe_ratio": null,
+          "ev_to_ebitda": 14.299,
+          "fcf_yield": 0.052277,
+          "ebitda": 14600999936.0,
+          "total_debt": 26246000640.0,
+          "debt_to_ebitda": 1.8,
+          "debt_to_equity": 2.2347,
+          "current_ratio": 1.265,
+          "net_income": 8510000000.0,
+          "revenue": 29442000000.0
+        },
+        "earnings": {
+          "latest_eps": -8.45,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": null,
+          "next_earnings_date": "2026-10-29"
+        },
+        "catalysts": {
+          "catalyst_flags": "analyst_upgrade,regulatory",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
       "reused": false
+    },
+    {
+      "timestamp": "2026-09-04T17:57:23.543237",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "TGT",
+      "momentum_score": 46.1,
+      "direction": "PUT",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.45,
+      "final_score": 0.555,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "TGT exhibits classic momentum exhaustion signals despite strong recent returns. The 28.2% 20-day gain with 19% 10-day gain shows deceleration (5.6% last 5 days), while volume has collapsed to 0.15x relative average with a -1.83 z-score indicating institutional participation has dried up. The RSI at 62.7 is not extreme but the price-volume divergence suggests weak-handed retail chasing. Strong fundamentals and positive catalysts are already reflected in the 28% move, creating asymmetric downside risk as the next earnings catalyst is 5+ months away with no near-term catalyst to sustain momentum.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "TGT",
+        "direction": "PUT",
+        "confidence": 0.58,
+        "thesis": "TGT exhibits classic momentum exhaustion signals despite strong recent returns. The 28.2% 20-day gain with 19% 10-day gain shows deceleration (5.6% last 5 days), while volume has collapsed to 0.15x relative average with a -1.83 z-score indicating institutional participation has dried up. The RSI at 62.7 is not extreme but the price-volume divergence suggests weak-handed retail chasing. Strong fundamentals and positive catalysts are already reflected in the 28% move, creating asymmetric downside risk as the next earnings catalyst is 5+ months away with no near-term catalyst to sustain momentum.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.25,
+        "risk_level": 0.72,
+        "expected_holding_days": 5,
+        "invalidation": "Daily close above 20-day high on volume >1.5x average; RSI breaks above 70 with sustained buying; any positive guidance revision or analyst upgrade cluster",
+        "catalyst_classification": "ALREADY_PRICED",
+        "key_risks": [
+          "Broad market bull regime could lift TGT despite weak internals; retail sector rotation or defensive bid could extend move",
+          "Low absolute RSI (62.7) leaves room for further momentum chasing before true exhaustion; short squeeze risk if positioning is crowded",
+          "Strong EPS growth (100.5%) and reasonable valuation (17x forward PE) provide fundamental support for dip-buying"
+        ]
+      },
+      "qwen": {
+        "symbol": "TGT",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.45,
+        "risk_score": 0.72,
+        "momentum_assessment": "EXHAUSTED",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "ALREADY_PRICED",
+        "concerns": [
+          "Volume collapse (0.15x rel_volume) suggests institutional participation has withdrawn",
+          "RSI at 62.7 is not overbought but price-volume divergence indicates weak retail flow",
+          "No near-term catalysts (next earnings in 5+ months) to sustain momentum",
+          "Strong EPS growth (100.5%) and 17x forward PE provide fundamental support for dip-buying"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Daily close above 20-day high on volume >1.5x average (1.5x * 19.1M avg volume)",
+          "RSI breaks above 70 with sustained buying (volume >1.5x average required)",
+          "EPS guidance revision upward or analyst upgrades clustering in next 5 days"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.45)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 46 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.56 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 46.1,
+          "momentum_rank": 37,
+          "return_5d_pct": 5.6,
+          "return_10d_pct": 19.0,
+          "return_20d_pct": 28.2,
+          "relative_strength_5d_pct": 6.1,
+          "rel_volume": 0.15,
+          "volume_zscore": -1.83,
+          "rsi_14": 62.7,
+          "atr_pct": 1.74
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.053,
+          "eps_growth": 1.005,
+          "gross_margin": 0.2838,
+          "operating_margin": 0.06044,
+          "roe": 0.26408002,
+          "forward_pe": 17.181253,
+          "pe_ratio": 16.978214,
+          "ev_to_ebitda": 10.275,
+          "fcf_yield": 0.046171,
+          "ebitda": 8593000448.0,
+          "total_debt": 19196000256.0,
+          "debt_to_ebitda": 2.23,
+          "debt_to_equity": 1.0758,
+          "current_ratio": 0.988,
+          "net_income": 3705000000.0,
+          "revenue": 104780000000.0
+        },
+        "earnings": {
+          "latest_eps": 1.71,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 1.007,
+          "next_earnings_date": "2026-11-18"
+        },
+        "catalysts": {
+          "catalyst_flags": "earnings_beat,regulatory",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:58:13.283320",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "GEN",
+      "momentum_score": 45.9,
+      "direction": "PUT",
+      "k2_confidence": 0.52,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.5,
+      "final_score": 0.51,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "GEN exhibits concerning momentum divergence with strong 20-day returns (+23%) but decelerating 5-day performance (+6.4%) on extremely weak volume (rel_volume 0.19, z-score -1.76). The price advance lacks volume confirmation, suggesting institutional distribution or retail-driven exhaustion. While fundamentals show solid earnings growth (64% EPS growth, 59% quarterly earnings growth) and attractive valuation (forward PE 9.2), the balance sheet is highly leveraged with debt-to-EBITDA of 3.39 and current ratio of 0.47 indicating liquidity stress. No identifiable catalyst supports continued upside, and the next earnings date is 5+ months away. The asymmetric opportunity lies in a momentum reversion play as the weak volume advance likely exhausts near-term buying pressure.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "GEN",
+        "direction": "PUT",
+        "confidence": 0.52,
+        "thesis": "GEN exhibits concerning momentum divergence with strong 20-day returns (+23%) but decelerating 5-day performance (+6.4%) on extremely weak volume (rel_volume 0.19, z-score -1.76). The price advance lacks volume confirmation, suggesting institutional distribution or retail-driven exhaustion. While fundamentals show solid earnings growth (64% EPS growth, 59% quarterly earnings growth) and attractive valuation (forward PE 9.2), the balance sheet is highly leveraged with debt-to-EBITDA of 3.39 and current ratio of 0.47 indicating liquidity stress. No identifiable catalyst supports continued upside, and the next earnings date is 5+ months away. The asymmetric opportunity lies in a momentum reversion play as the weak volume advance likely exhausts near-term buying pressure.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.62,
+        "catalyst_strength": 0.15,
+        "risk_level": 0.68,
+        "expected_holding_days": 3,
+        "invalidation": "Close above 10-day high on volume exceeding 1.5x average; RSI breaking above 65 with sustained buying pressure; any announced strategic transaction or analyst upgrade",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Strong earnings trajectory (64% EPS growth) and cheap valuation (forward PE 9.2) could attract value buyers on any dip",
+          "High leverage (debt-to-equity 3.08) creates binary risk if credit conditions tighten or refinancing concerns emerge",
+          "Low float or concentrated ownership could trigger short squeeze on minimal volume if sentiment shifts"
+        ]
+      },
+      "qwen": {
+        "symbol": "GEN",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.5,
+        "risk_score": 0.68,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Decelerating momentum (5D: +6.4% < 10D: +18.7%) with volume z-score -1.76 suggests weak conviction",
+          "High leverage (debt/EBITDA 3.39x) increases vulnerability to refinancing risks",
+          "No near-term catalysts within 3-day holding period; next earnings in 5+ months"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Price closes above 10-day high (calculated from 18.7% return) on volume > 1.5x average",
+          "RSI_14 breaks above 65 with sustained volume > 1.2x average",
+          "Announcement of strategic transaction or analyst upgrade"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.50)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 46 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.51 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 45.9,
+          "momentum_rank": 38,
+          "return_5d_pct": 6.4,
+          "return_10d_pct": 18.7,
+          "return_20d_pct": 23.0,
+          "relative_strength_5d_pct": 6.9,
+          "rel_volume": 0.19,
+          "volume_zscore": -1.76,
+          "rsi_14": 58.8,
+          "atr_pct": 1.96
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.78,
+          "revenue_growth": 0.063,
+          "eps_growth": 0.64,
+          "gross_margin": 0.78007007,
+          "operating_margin": 0.35554,
+          "roe": 0.41944,
+          "forward_pe": 9.240473,
+          "pe_ratio": 17.871344,
+          "ev_to_ebitda": 10.953,
+          "fcf_yield": 0.084576,
+          "ebitda": 2409999872.0,
+          "total_debt": 8176000000.0,
+          "debt_to_ebitda": 3.39,
+          "debt_to_equity": 3.0783,
+          "current_ratio": 0.466,
+          "net_income": 973000000.0,
+          "revenue": 5000000000.0
+        },
+        "earnings": {
+          "latest_eps": 0.36,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.593,
+          "next_earnings_date": "2026-11-05"
+        },
+        "catalysts": {
+          "catalyst_flags": "",
+          "concern_flags": "",
+          "headline_count": 1,
+          "catalyst_strength": 0.34
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T17:59:52.606545",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "JKHY",
+      "momentum_score": 45.5,
+      "direction": "CALL",
+      "k2_confidence": 0.62,
+      "qwen_recommendation": "REJECT",
+      "qwen_confidence": 0.42,
+      "final_score": 0.593,
+      "approved": false,
+      "reject_reason": "Qwen rejected: recommendation=REJECT, thesis_valid=False",
+      "thesis": "JKHY exhibits strong multi-timeframe momentum with 27.6% returns over 20 days and 10.9% over 10 days, suggesting a sustained uptrend rather than parabolic exhaustion. The RSI at 57.2 indicates room for further upside before overbought conditions emerge. However, volume is notably weak with a -1.74 z-score and 0.2 relative volume, signaling that this move lacks broad institutional participation and may be vulnerable to reversals. The 'earnings_beat' catalyst with 0.76 strength provides fundamental justification, though with next earnings not until November 2026, this catalyst is largely priced in. The strong balance sheet (0.11 debt/EBITDA, 24% ROE) and reasonable valuation (21x forward PE) support a bullish bias, but the volume divergence warrants caution and a shorter holding period.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "JKHY",
+        "direction": "CALL",
+        "confidence": 0.62,
+        "thesis": "JKHY exhibits strong multi-timeframe momentum with 27.6% returns over 20 days and 10.9% over 10 days, suggesting a sustained uptrend rather than parabolic exhaustion. The RSI at 57.2 indicates room for further upside before overbought conditions emerge. However, volume is notably weak with a -1.74 z-score and 0.2 relative volume, signaling that this move lacks broad institutional participation and may be vulnerable to reversals. The 'earnings_beat' catalyst with 0.76 strength provides fundamental justification, though with next earnings not until November 2026, this catalyst is largely priced in. The strong balance sheet (0.11 debt/EBITDA, 24% ROE) and reasonable valuation (21x forward PE) support a bullish bias, but the volume divergence warrants caution and a shorter holding period.",
+        "momentum_quality": 0.58,
+        "fundamental_quality": 0.78,
+        "catalyst_strength": 0.45,
+        "risk_level": 0.71,
+        "expected_holding_days": 5,
+        "invalidation": "1) Volume fails to confirm with rel_volume remaining below 0.5 while price declines more than 2% from entry; 2) RSI breaks below 50 on a closing basis; 3) 5-day return turns negative while relative strength underperforms S&P by more than 3%",
+        "catalyst_classification": "ALREADY_PRICED",
+        "key_risks": [
+          "Volume divergence (-1.74 z-score) indicates weak institutional conviction and susceptibility to sharp reversals on any negative news",
+          "EPS growth contraction (-10.4%) and negative quarterly earnings growth (-12.8%) suggest fundamental headwinds that could limit upside",
+          "Extended time to next earnings (November 2026) removes near-term catalyst support and leaves the stock exposed to macro sentiment shifts"
+        ]
+      },
+      "qwen": {
+        "symbol": "JKHY",
+        "recommendation": "REJECT",
+        "thesis_valid": false,
+        "adjusted_confidence": 0.42,
+        "risk_score": 0.78,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "NEUTRAL",
+        "catalyst_assessment": "ALREADY_PRICED",
+        "concerns": [
+          "Volume divergence (-1.74 z-score, 0.2 rel_volume) contradicts bullish momentum thesis",
+          "EPS growth contraction (-10.4%) and negative quarterly earnings growth (-12.8%) directly conflict with 'strong fundamentals' claim",
+          "Extended time to next earnings (November 2026) removes near-term catalyst support"
+        ],
+        "contradictions": [
+          "Thesis claims 'strong balance sheet and reasonable valuation support bullish bias' while EPS growth is negative (-10.4%)",
+          "RSI at 57.2 suggests room for upside but volume remains at 0.2 rel_volume (well below average)"
+        ],
+        "invalidation_conditions": [
+          "Volume remains below 0.5 rel_volume while price declines >2% from entry",
+          "RSI closes below 50 on a closing basis",
+          "5-day return turns negative with relative strength underperforming S&P by >3%"
+        ]
+      },
+      "gates": [],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 45.5,
+          "momentum_rank": 39,
+          "return_5d_pct": 8.0,
+          "return_10d_pct": 10.9,
+          "return_20d_pct": 27.6,
+          "relative_strength_5d_pct": 8.5,
+          "rel_volume": 0.2,
+          "volume_zscore": -1.74,
+          "rsi_14": 57.2,
+          "atr_pct": 1.94
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.047,
+          "eps_growth": -0.104,
+          "gross_margin": 0.43897998,
+          "operating_margin": 0.22503,
+          "roe": 0.24040002,
+          "forward_pe": 21.150408,
+          "pe_ratio": 23.76614,
+          "ev_to_ebitda": 16.905,
+          "fcf_yield": 0.030327,
+          "ebitda": 702214016.0,
+          "total_debt": 77821000.0,
+          "debt_to_ebitda": 0.11,
+          "debt_to_equity": 0.0379,
+          "current_ratio": 1.167,
+          "net_income": 455748000.0,
+          "revenue": 2375288000.0
+        },
+        "earnings": {
+          "latest_eps": 1.71,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.128,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "earnings_beat",
+          "concern_flags": "",
+          "headline_count": 4,
+          "catalyst_strength": 0.76
+        }
+      },
+      "reused": false
+    },
+    {
+      "timestamp": "2026-09-04T18:02:15.330409",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "AMGN",
+      "momentum_score": 45.1,
+      "direction": "CALL",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "REJECT",
+      "qwen_confidence": 0.42,
+      "final_score": 0.54,
+      "approved": false,
+      "reject_reason": "Qwen rejected: recommendation=REJECT, thesis_valid=False",
+      "thesis": "AMGN exhibits strong intermediate-term momentum with 27% gains over 20 days and accelerating returns, but volume contraction raises execution concerns. The fundamental backdrop is robust with 65% earnings growth and improving margins, while valuation at 18x forward PE appears reasonable for a biotech growth profile. The lack of identifiable catalysts suggests momentum may be technically-driven rather than event-driven, limiting conviction. Best suited for a short-term continuation play with tight risk management.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "AMGN",
+        "direction": "CALL",
+        "confidence": 0.58,
+        "thesis": "AMGN exhibits strong intermediate-term momentum with 27% gains over 20 days and accelerating returns, but volume contraction raises execution concerns. The fundamental backdrop is robust with 65% earnings growth and improving margins, while valuation at 18x forward PE appears reasonable for a biotech growth profile. The lack of identifiable catalysts suggests momentum may be technically-driven rather than event-driven, limiting conviction. Best suited for a short-term continuation play with tight risk management.",
+        "momentum_quality": 0.52,
+        "fundamental_quality": 0.78,
+        "catalyst_strength": 0.25,
+        "risk_level": 0.71,
+        "expected_holding_days": 5,
+        "invalidation": "Daily close below the 10-day EMA; RSI falls below 55; volume fails to expand on any breakout attempt above recent highs",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Volume collapse (rel_volume 0.15, z-score -1.86) indicates institutional participation may be fading, increasing slippage risk on exits",
+          "Debt-to-EBITDA of 3.32x and debt-to-equity of 4.9x create balance sheet vulnerability if credit conditions tighten",
+          "No identifiable catalyst means momentum could reverse quickly without news flow to sustain it"
+        ]
+      },
+      "qwen": {
+        "symbol": "AMGN",
+        "recommendation": "REJECT",
+        "thesis_valid": false,
+        "adjusted_confidence": 0.42,
+        "risk_score": 0.78,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Volume contraction (rel_volume 0.15, z-score -1.86) contradicts bullish momentum thesis and increases slippage risk",
+          "Debt-to-EBITDA of 3.32x and debt-to-equity of 4.9x create balance sheet vulnerability if credit conditions tighten",
+          "Catalyst strength discrepancy: thesis cites 0.25 but evidence shows 0.7 with 10 headline_count"
+        ],
+        "contradictions": [
+          "Thesis claims no identifiable catalysts while evidence shows catalyst_strength=0.7 and 10 headline_count",
+          "Volume metrics (rel_volume 0.15) directly contradict thesis assertion of 'accelerating returns'"
+        ],
+        "invalidation_conditions": [
+          "Daily close below 10-day EMA (calculated from 16.1% 10D return)",
+          "RSI closes below 55 (current RSI=63.7)",
+          "Volume fails to expand above 1.5x average volume on breakout above $167.75 (20D high + 1.48% ATR)"
+        ]
+      },
+      "gates": [],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 45.1,
+          "momentum_rank": 40,
+          "return_5d_pct": 5.8,
+          "return_10d_pct": 16.1,
+          "return_20d_pct": 27.1,
+          "relative_strength_5d_pct": 6.3,
+          "rel_volume": 0.15,
+          "volume_zscore": -1.86,
+          "rsi_14": 63.7,
+          "atr_pct": 1.48
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.095,
+          "eps_growth": 0.649,
+          "gross_margin": 0.71891,
+          "operating_margin": 0.35548002,
+          "roe": 0.91473,
+          "forward_pe": 17.980104,
+          "pe_ratio": 27.13976,
+          "ev_to_ebitda": 16.413,
+          "fcf_yield": 0.03644,
+          "ebitda": 17268000768.0,
+          "total_debt": 57303998464.0,
+          "debt_to_ebitda": 3.32,
+          "debt_to_equity": 4.9028,
+          "current_ratio": 1.371,
+          "net_income": 7711000000.0,
+          "revenue": 36751000000.0
+        },
+        "earnings": {
+          "latest_eps": 4.37,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.659,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 0.7
+        }
+      },
+      "reused": false
+    },
+    {
+      "timestamp": "2026-09-04T18:03:12.480805",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "DASH",
+      "momentum_score": 45.1,
+      "direction": "CALL",
+      "k2_confidence": 0.62,
+      "qwen_recommendation": "REJECT",
+      "qwen_confidence": 0.45,
+      "final_score": 0.57,
+      "approved": false,
+      "reject_reason": "Qwen rejected: recommendation=REJECT, thesis_valid=False",
+      "thesis": "DASH exhibits strong medium-term momentum with 24.4% 10-day and 41.4% 20-day returns in a confirmed BULL regime, suggesting institutional accumulation despite modest 5-day pullback. The RSI at 57.1 indicates room for further upside without overbought conditions, while compressed relative volume (0.29x, z-score -1.79) suggests a consolidation phase that could resolve higher with volume expansion. Strong revenue growth of 35.6% and robust gross margins of 52.2% support the fundamental trajectory, with M&A and major contract catalysts providing near-term upside optionality. The asymmetric setup favors a continuation play over 3-5 days targeting momentum reacceleration.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "DASH",
+        "direction": "CALL",
+        "confidence": 0.62,
+        "thesis": "DASH exhibits strong medium-term momentum with 24.4% 10-day and 41.4% 20-day returns in a confirmed BULL regime, suggesting institutional accumulation despite modest 5-day pullback. The RSI at 57.1 indicates room for further upside without overbought conditions, while compressed relative volume (0.29x, z-score -1.79) suggests a consolidation phase that could resolve higher with volume expansion. Strong revenue growth of 35.6% and robust gross margins of 52.2% support the fundamental trajectory, with M&A and major contract catalysts providing near-term upside optionality. The asymmetric setup favors a continuation play over 3-5 days targeting momentum reacceleration.",
+        "momentum_quality": 0.71,
+        "fundamental_quality": 0.74,
+        "catalyst_strength": 0.78,
+        "risk_level": 0.58,
+        "expected_holding_days": 4,
+        "invalidation": "Break below 20-day momentum support level; RSI closes below 50 on daily timeframe; volume fails to expand on any breakout attempt",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Valuation extreme with PE of 116x and EV/EBITDA of 65.6x creates vulnerability to any growth disappointment or rate shock",
+          "Negative EPS growth (-30%) and earnings contraction despite revenue strength signals margin compression risks",
+          "Low relative volume indicates weak conviction; failure to attract buyers risks sudden reversal"
+        ]
+      },
+      "qwen": {
+        "symbol": "DASH",
+        "recommendation": "REJECT",
+        "thesis_valid": false,
+        "adjusted_confidence": 0.45,
+        "risk_score": 0.72,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Negative EPS growth (-30%) contradicts revenue growth, signaling margin compression or operational inefficiencies",
+          "Valuation multiples (PE 116x, EV/EBITDA 65.6x) are extreme relative to fundamentals and growth rates",
+          "Low relative volume (0.29x) suggests weak institutional conviction and potential liquidity risks",
+          "Operating margin (3.86%) is significantly lower than gross margin (52.2%), indicating high SG&A or R&D costs"
+        ],
+        "contradictions": [
+          "Thesis claims 'robust fundamental trajectory' despite -30% EPS growth and 3.86% operating margin",
+          "Bull regime assumption conflicts with negative earnings momentum and high valuation vulnerability"
+        ],
+        "invalidation_conditions": [
+          "Price breaks below 20-day momentum support level ($12.75 per 20-day low from data)",
+          "RSI closes below 50 on daily timeframe with volume > 1.2x 20-day average",
+          "Volume fails to expand (rel_volume < 0.8) on any breakout above $15.20 (52-week high from data)"
+        ]
+      },
+      "gates": [],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 45.1,
+          "momentum_rank": 41,
+          "return_5d_pct": -0.5,
+          "return_10d_pct": 24.4,
+          "return_20d_pct": 41.4,
+          "relative_strength_5d_pct": -0.0,
+          "rel_volume": 0.29,
+          "volume_zscore": -1.79,
+          "rsi_14": 57.1,
+          "atr_pct": 2.41
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.356,
+          "eps_growth": -0.3,
+          "gross_margin": 0.52225,
+          "operating_margin": 0.03862,
+          "roe": 0.088870004,
+          "forward_pe": 26.49807,
+          "pe_ratio": 116.02151,
+          "ev_to_ebitda": 65.571,
+          "fcf_yield": 0.05505,
+          "ebitda": 1436000000.0,
+          "total_debt": 3304999936.0,
+          "debt_to_ebitda": 2.3,
+          "debt_to_equity": 0.3328,
+          "current_ratio": 1.368,
+          "net_income": 935000000.0,
+          "revenue": 13717000000.0
+        },
+        "earnings": {
+          "latest_eps": 0.46,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.298,
+          "next_earnings_date": "2026-11-04"
+        },
+        "catalysts": {
+          "catalyst_flags": "M_A,major_contract,regulatory",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
+      "reused": false
+    },
+    {
+      "timestamp": "2026-09-04T18:04:10.956253",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "FCX",
+      "momentum_score": 44.5,
+      "direction": "CALL",
+      "k2_confidence": 0.62,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.55,
+      "final_score": 0.63,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "FCX exhibits healthy intermediate-term momentum with 15.8% returns over 20 days and 15.1% over 10 days, suggesting a sustained uptrend rather than parabolic exhaustion. The RSI of 58.5 indicates room for further upside before overbought conditions. Strong EPS growth of 28.1% and quarterly earnings growth of 27.5% support the price move, though revenue decline of 7.3% tempers enthusiasm. The regulatory catalyst with 0.7 strength likely relates to favorable mining policy developments, providing near-term tailwinds. Volume contraction (rel_volume 0.15, z-score -1.96) is the primary concern, suggesting institutional participation may be waning.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "FCX",
+        "direction": "CALL",
+        "confidence": 0.62,
+        "thesis": "FCX exhibits healthy intermediate-term momentum with 15.8% returns over 20 days and 15.1% over 10 days, suggesting a sustained uptrend rather than parabolic exhaustion. The RSI of 58.5 indicates room for further upside before overbought conditions. Strong EPS growth of 28.1% and quarterly earnings growth of 27.5% support the price move, though revenue decline of 7.3% tempers enthusiasm. The regulatory catalyst with 0.7 strength likely relates to favorable mining policy developments, providing near-term tailwinds. Volume contraction (rel_volume 0.15, z-score -1.96) is the primary concern, suggesting institutional participation may be waning.",
+        "momentum_quality": 0.68,
+        "fundamental_quality": 0.71,
+        "catalyst_strength": 0.7,
+        "risk_level": 0.58,
+        "expected_holding_days": 5,
+        "invalidation": "RSI closes above 70 indicating overbought exhaustion; rel_volume drops below 0.10 with price decline >3% in a single session; 5-day return turns negative breaking the 8% recent gain",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Volume profile is anemic with -1.96 z-score suggesting weak institutional conviction and potential for sharp reversals",
+          "Valuation stretched at 36x trailing PE and 17.5x forward PE with negative revenue growth creates fundamental disconnect",
+          "Commodity exposure to copper prices adds macro volatility beyond company-specific factors"
+        ]
+      },
+      "qwen": {
+        "symbol": "FCX",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.55,
+        "risk_score": 0.62,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Volume contraction (rel_volume 0.15, z-score -1.96) suggests weak institutional participation and potential for sharp reversals",
+          "Valuation stretched at 36x trailing PE despite negative revenue growth (-7.3%)",
+          "Commodity price exposure to copper/macroeconomic volatility creates external risk beyond company fundamentals"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "RSI closes above 70 (current 58.5) indicating overbought exhaustion",
+          "rel_volume drops below 0.10 with price decline >3% in a single session",
+          "5-day return turns negative breaking the 8% recent gain"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 45 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.63 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 44.5,
+          "momentum_rank": 42,
+          "return_5d_pct": 8.0,
+          "return_10d_pct": 15.1,
+          "return_20d_pct": 15.8,
+          "relative_strength_5d_pct": 8.5,
+          "rel_volume": 0.15,
+          "volume_zscore": -1.96,
+          "rsi_14": 58.5,
+          "atr_pct": 2.49
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": -0.073,
+          "eps_growth": 0.281,
+          "gross_margin": 0.38275,
+          "operating_margin": 0.33404,
+          "roe": 0.14755,
+          "forward_pe": 17.450634,
+          "pe_ratio": 36.0825,
+          "ev_to_ebitda": 12.831,
+          "fcf_yield": 0.020836,
+          "ebitda": 9553999872.0,
+          "total_debt": 10359000064.0,
+          "debt_to_ebitda": 1.08,
+          "debt_to_equity": 0.3215,
+          "current_ratio": 2.066,
+          "net_income": 2204000000.0,
+          "revenue": 25915000000.0
+        },
+        "earnings": {
+          "latest_eps": 0.68,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.275,
+          "next_earnings_date": "2026-10-22"
+        },
+        "catalysts": {
+          "catalyst_flags": "regulatory",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 0.7
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:05:02.511207",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "APA",
+      "momentum_score": 44.5,
+      "direction": "PUT",
+      "k2_confidence": 0.42,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.35,
+      "final_score": 0.528,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "APA shows classic momentum divergence: strong 10-day returns of 19.5% and 5-day returns of 7.0% are occurring on extremely depressed volume (rel_volume 0.35, volume_zscore -2.06). This volume-price disconnect suggests institutional distribution or retail-driven exhaustion rather than healthy accumulation. The momentum score of 44.5 is mediocre despite recent price gains, indicating underlying weakness. With RSI at 60.2, there's room for pullback without oversold conditions. The lack of identifiable catalysts (catalyst_strength 0.46, empty catalyst_flags) suggests the move lacks fundamental sponsorship. Strong fundamentals create a valuation floor, but near-term momentum appears exhausted. Expected 3-5 day pullback play as volume-normalized selling pressure emerges.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "APA",
+        "direction": "PUT",
+        "confidence": 0.42,
+        "thesis": "APA shows classic momentum divergence: strong 10-day returns of 19.5% and 5-day returns of 7.0% are occurring on extremely depressed volume (rel_volume 0.35, volume_zscore -2.06). This volume-price disconnect suggests institutional distribution or retail-driven exhaustion rather than healthy accumulation. The momentum score of 44.5 is mediocre despite recent price gains, indicating underlying weakness. With RSI at 60.2, there's room for pullback without oversold conditions. The lack of identifiable catalysts (catalyst_strength 0.46, empty catalyst_flags) suggests the move lacks fundamental sponsorship. Strong fundamentals create a valuation floor, but near-term momentum appears exhausted. Expected 3-5 day pullback play as volume-normalized selling pressure emerges.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.2,
+        "risk_level": 0.68,
+        "expected_holding_days": 4,
+        "invalidation": "Daily close above recent 10-day high with volume spike above 1.5x average; RSI breakout above 65 on expanding volume; oil sector ETF (XLE) breaking to new 20-day highs",
+        "catalyst_classification": "ALREADY_PRICED",
+        "key_risks": [
+          "Strong underlying fundamentals and cheap valuation (P/E 9.1, EV/EBITDA 3.5) create downside support limiting asymmetric payoff",
+          "Energy sector rotation or commodity price spike could override technical weakness",
+          "Low float dynamics in oil names can produce violent short-term squeezes on any headline"
+        ]
+      },
+      "qwen": {
+        "symbol": "APA",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.35,
+        "risk_score": 0.68,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "ALREADY_PRICED",
+        "concerns": [
+          "Volume divergence (rel_volume 0.35, volume_zscore -2.06) suggests unsustainable momentum",
+          "Momentum decelerating (5D return 7.0% < 10D return 19.5%) without volume confirmation",
+          "Lack of catalyst sponsorship (catalyst_strength 0.46) increases mean-reversion risk"
+        ],
+        "contradictions": [
+          "Thesis claims 'momentum exhausted' but 5D return remains positive (7.0%), not meeting exhaustion criteria (5D < 0.25x 10D return)"
+        ],
+        "invalidation_conditions": [
+          "Daily close above 10-day high with volume > 1.5x average (rel_volume 0.35 baseline)",
+          "RSI_14 closes above 65 with volume_zscore > 0.5",
+          "XLE ETF closes at 20-day highs with volume > 1.2x 20-day average"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.35)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.42 below minimum 0.5 \u2014 DEMO override"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 44 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.53 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 44.5,
+          "momentum_rank": 43,
+          "return_5d_pct": 7.0,
+          "return_10d_pct": 19.5,
+          "return_20d_pct": 12.9,
+          "relative_strength_5d_pct": 7.5,
+          "rel_volume": 0.35,
+          "volume_zscore": -2.06,
+          "rsi_14": 60.2,
+          "atr_pct": 2.13
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.092,
+          "eps_growth": 0.263,
+          "gross_margin": 0.78255,
+          "operating_margin": 0.56331,
+          "roe": 0.26659,
+          "forward_pe": 10.342275,
+          "pe_ratio": 9.135021,
+          "ev_to_ebitda": 3.468,
+          "fcf_yield": 0.141511,
+          "ebitda": 5720000000.0,
+          "total_debt": 3880999936.0,
+          "debt_to_ebitda": 0.68,
+          "debt_to_equity": 0.4885,
+          "current_ratio": 0.946,
+          "net_income": 1434000000.0,
+          "revenue": 8920000000.0
+        },
+        "earnings": {
+          "latest_eps": 2.11,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.239,
+          "next_earnings_date": "2026-11-04"
+        },
+        "catalysts": {
+          "catalyst_flags": "",
+          "concern_flags": "",
+          "headline_count": 4,
+          "catalyst_strength": 0.46
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:07:19.454778",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "CTVA",
+      "momentum_score": 43.9,
+      "direction": "CALL",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.55,
+      "final_score": 0.58,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "CTVA shows mixed but potentially constructive momentum with a strong 5-day rebound (+13.0%) following a weak 10-day period (-1.6%), suggesting a recovery rather than exhaustion. The 20-day return of +15.2% indicates underlying bullish structure in a confirmed BULL regime. However, volume is conspicuously absent with a -1.54 z-score and 0.18 relative volume, indicating this move lacks institutional participation and conviction. The RSI at 51.9 leaves substantial room before overbought conditions. With no identifiable catalysts (0.62 strength with empty flags) and next earnings not until November 2026, this appears to be a technical mean-reversion play within a broader uptrend. The trade thesis relies on continued rotational buying into defensive/agricultural names with the understanding that low volume increases false breakout risk.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "CTVA",
+        "direction": "CALL",
+        "confidence": 0.58,
+        "thesis": "CTVA shows mixed but potentially constructive momentum with a strong 5-day rebound (+13.0%) following a weak 10-day period (-1.6%), suggesting a recovery rather than exhaustion. The 20-day return of +15.2% indicates underlying bullish structure in a confirmed BULL regime. However, volume is conspicuously absent with a -1.54 z-score and 0.18 relative volume, indicating this move lacks institutional participation and conviction. The RSI at 51.9 leaves substantial room before overbought conditions. With no identifiable catalysts (0.62 strength with empty flags) and next earnings not until November 2026, this appears to be a technical mean-reversion play within a broader uptrend. The trade thesis relies on continued rotational buying into defensive/agricultural names with the understanding that low volume increases false breakout risk.",
+        "momentum_quality": 0.48,
+        "fundamental_quality": 0.55,
+        "catalyst_strength": 0.35,
+        "risk_level": 0.67,
+        "expected_holding_days": 5,
+        "invalidation": "Close below 5-day low on expanding volume; RSI drops below 45 with increasing volume; break of 10-day EMA support with volume >150% average",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Volume confirmation failure - the 0.18 relative volume indicates weak institutional conviction and susceptibility to rapid reversal",
+          "Fundamental deterioration - negative revenue growth (-1.2%), negative EPS growth (-9.9%), and elevated P/E (53.8x) versus forward P/E (21.2x) suggest earnings compression risk",
+          "Extended holding period risk with no near-term catalyst until November 2026 earnings, leaving the stock vulnerable to broad market sentiment shifts without stock-specific news flow"
+        ]
+      },
+      "qwen": {
+        "symbol": "CTVA",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.55,
+        "risk_score": 0.67,
+        "momentum_assessment": "WEAK",
+        "fundamental_assessment": "NEUTRAL",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Volume confirmation failure - 0.18 relative volume and -1.54 z-score indicate weak institutional participation",
+          "Fundamental deterioration - -1.2% revenue growth and -9.9% EPS growth contradict bullish technical picture",
+          "Extended holding period risk with no catalyst until November 2026"
+        ],
+        "contradictions": [
+          "Negative revenue/eps growth (-1.2%/-9.9%) contradicts 'bull regime' characterization",
+          "High P/E (53.8x) vs forward P/E (21.2x) suggests valuation compression risk not mentioned in thesis"
+        ],
+        "invalidation_conditions": [
+          "Close below 5-day low on expanding volume (>150% average)",
+          "RSI drops below 45 with volume >150% of 20-day average",
+          "Break of 10-day EMA support with volume >150% of 20-day average"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 44 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.58 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 43.9,
+          "momentum_rank": 44,
+          "return_5d_pct": 13.0,
+          "return_10d_pct": -1.6,
+          "return_20d_pct": 15.2,
+          "relative_strength_5d_pct": 13.5,
+          "rel_volume": 0.18,
+          "volume_zscore": -1.54,
+          "rsi_14": 51.9,
+          "atr_pct": 1.74
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.78,
+          "revenue_growth": -0.012,
+          "eps_growth": -0.099,
+          "gross_margin": 0.4954,
+          "operating_margin": 0.3013,
+          "roe": 0.04256,
+          "forward_pe": 21.15617,
+          "pe_ratio": 53.817898,
+          "ev_to_ebitda": 14.475,
+          "fcf_yield": 0.041555,
+          "ebitda": 4275000064.0,
+          "total_debt": 4874999808.0,
+          "debt_to_ebitda": 1.14,
+          "debt_to_equity": 0.1919,
+          "current_ratio": 1.516,
+          "net_income": 1094000000.0,
+          "revenue": 17401000000.0
+        },
+        "earnings": {
+          "latest_eps": 1.73,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.116,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "",
+          "concern_flags": "",
+          "headline_count": 8,
+          "catalyst_strength": 0.62
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:08:37.404915",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "CDW",
+      "momentum_score": 43.8,
+      "direction": "CALL",
+      "k2_confidence": 0.52,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.48,
+      "final_score": 0.594,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "CDW exhibits moderate momentum with 14.7% gains over 20 days in a bull market regime, but the move lacks volume conviction with rel_volume at 0.05 and volume_zscore of -1.64 indicating institutional disinterest. The 5-day return of 7.7% shows recent acceleration while RSI at 53.2 leaves room for further upside without overbought conditions. Fundamentals are solid with 0.89 quality score, reasonable forward PE of 12.6, and strong ROE of 44%, though debt levels are elevated at 3.2x EBITDA. The regulatory catalyst flagged is vague with only 0.42 strength, suggesting limited asymmetric edge. This is a momentum continuation play with tight risk management required due to weak volume confirmation.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "CDW",
+        "direction": "CALL",
+        "confidence": 0.52,
+        "thesis": "CDW exhibits moderate momentum with 14.7% gains over 20 days in a bull market regime, but the move lacks volume conviction with rel_volume at 0.05 and volume_zscore of -1.64 indicating institutional disinterest. The 5-day return of 7.7% shows recent acceleration while RSI at 53.2 leaves room for further upside without overbought conditions. Fundamentals are solid with 0.89 quality score, reasonable forward PE of 12.6, and strong ROE of 44%, though debt levels are elevated at 3.2x EBITDA. The regulatory catalyst flagged is vague with only 0.42 strength, suggesting limited asymmetric edge. This is a momentum continuation play with tight risk management required due to weak volume confirmation.",
+        "momentum_quality": 0.55,
+        "fundamental_quality": 0.89,
+        "catalyst_strength": 0.42,
+        "risk_level": 0.68,
+        "expected_holding_days": 5,
+        "invalidation": "Close below 20-day moving average or volume_zscore dropping below -2.0 with negative 3-day return; RSI falling below 45 while price breaks 10-day low.",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Volume confirmation failure indicates lack of institutional participation and increases reversal risk",
+          "Elevated debt-to-EBITDA of 3.2x and debt-to-equity of 2.63x creates balance sheet vulnerability in rising rate environment",
+          "Vague regulatory catalyst with low strength score provides insufficient fundamental justification for continued momentum"
+        ]
+      },
+      "qwen": {
+        "symbol": "CDW",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.48,
+        "risk_score": 0.65,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Volume confirmation failure (rel_volume=0.05, volume_zscore=-1.64) increases reversal risk",
+          "Elevated debt-to-EBITDA of 3.2x and debt-to-equity of 2.63x exposes to interest rate sensitivity",
+          "Weak regulatory catalyst (strength=0.42) lacks asymmetric upside potential"
+        ],
+        "contradictions": [
+          "Thesis acknowledges volume weakness as risk, but momentum continuation thesis still relies on weak confirmation",
+          "High ROE (44%) and low forward PE (12.6) contrast with elevated leverage risks"
+        ],
+        "invalidation_conditions": [
+          "Price closes below 20-day moving average (not quantified in evidence)",
+          "Volume_zscore drops below -2.0 with 3-day negative return",
+          "RSI closes below 45 while price breaks 10-day low"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.48)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 44 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.59 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 43.8,
+          "momentum_rank": 45,
+          "return_5d_pct": 7.7,
+          "return_10d_pct": 12.9,
+          "return_20d_pct": 14.7,
+          "relative_strength_5d_pct": 8.2,
+          "rel_volume": 0.05,
+          "volume_zscore": -1.64,
+          "rsi_14": 53.2,
+          "atr_pct": 2.8
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.1,
+          "eps_growth": 0.049,
+          "gross_margin": 0.21360001,
+          "operating_margin": 0.07345,
+          "roe": 0.44009998,
+          "forward_pe": 12.5604925,
+          "pe_ratio": 17.394432,
+          "ev_to_ebitda": 12.587,
+          "fcf_yield": 0.036105,
+          "ebitda": 2010899968.0,
+          "total_debt": 6429499904.0,
+          "debt_to_ebitda": 3.2,
+          "debt_to_equity": 2.6328,
+          "current_ratio": 1.167,
+          "net_income": 1066600000.0,
+          "revenue": 22424100000.0
+        },
+        "earnings": {
+          "latest_eps": 2.15,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.012,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "regulatory",
+          "concern_flags": "",
+          "headline_count": 3,
+          "catalyst_strength": 0.42
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:10:16.446659",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "SWKS",
+      "momentum_score": 43.5,
+      "direction": "PUT",
+      "k2_confidence": 0.52,
+      "qwen_recommendation": "REJECT",
+      "qwen_confidence": 0.45,
+      "final_score": 0.514,
+      "approved": false,
+      "reject_reason": "Qwen rejected: recommendation=REJECT, thesis_valid=False",
+      "thesis": "SWKS exhibits weak momentum with a score of 43.5 and rank of 46, accompanied by sharply declining volume (rel_volume 0.32, z-score -1.36) that contradicts the recent 10-day 20.5% gain. The 5-day return of 6.5% and 20-day return of 3.0% show momentum deceleration after a sharp spike, suggesting an exhausted move rather than sustainable trend. Fundamentals are deteriorating with -68.6% EPS growth, -3.1% revenue decline, and negative earnings growth of -67.7%, while the 38x trailing PE versus 14.7x forward PE implies expected recovery that may be overly optimistic. The M&A and regulatory catalyst flags with lawsuit concerns create uncertainty rather than conviction, and the distant November 2026 earnings date removes near-term catalyst support.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "SWKS",
+        "direction": "PUT",
+        "confidence": 0.52,
+        "thesis": "SWKS exhibits weak momentum with a score of 43.5 and rank of 46, accompanied by sharply declining volume (rel_volume 0.32, z-score -1.36) that contradicts the recent 10-day 20.5% gain. The 5-day return of 6.5% and 20-day return of 3.0% show momentum deceleration after a sharp spike, suggesting an exhausted move rather than sustainable trend. Fundamentals are deteriorating with -68.6% EPS growth, -3.1% revenue decline, and negative earnings growth of -67.7%, while the 38x trailing PE versus 14.7x forward PE implies expected recovery that may be overly optimistic. The M&A and regulatory catalyst flags with lawsuit concerns create uncertainty rather than conviction, and the distant November 2026 earnings date removes near-term catalyst support.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.42,
+        "catalyst_strength": 0.45,
+        "risk_level": 0.68,
+        "expected_holding_days": 5,
+        "invalidation": "Close above 10-day high on volume >150% of 20-day average; RSI breaks above 65 with sustained buying pressure; M&A announcement with definitive agreement",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "M&A speculation could ignite sudden upside volatility on any deal leak or announcement",
+          "Semiconductor sector rotation or broad market rally could lift weak fundamentals",
+          "Lawsuit resolution or regulatory clearance could remove overhang and trigger short covering"
+        ]
+      },
+      "qwen": {
+        "symbol": "SWKS",
+        "recommendation": "REJECT",
+        "thesis_valid": false,
+        "adjusted_confidence": 0.45,
+        "risk_score": 0.72,
+        "momentum_assessment": "EXHAUSTED",
+        "fundamental_assessment": "NEGATIVE",
+        "catalyst_assessment": "NEGATIVE",
+        "concerns": [
+          "Fundamental_quality in evidence (0.78) contradicts K2's assessment (0.42), suggesting misaligned valuation analysis",
+          "Momentum is decelerating (5D:6.5% vs 10D:20.5%) but not technically exhausted per rules (0.315x ratio > 0.25 threshold)",
+          "Volume remains critically low (rel_volume 0.32, z-score -1.36) despite sharp price move, indicating weak conviction"
+        ],
+        "contradictions": [
+          "Fundamental_quality metric in evidence (0.78) directly contradicts K2's 0.42 assessment",
+          "Momentum exhaustion claim contradicts quantitative rules (5D/10D ratio 0.315 > 0.25 threshold for exhaustion)"
+        ],
+        "invalidation_conditions": [
+          "Close above 10-day high on volume >150% of 20-day average (current rel_volume 0.32)",
+          "RSI closes above 65 with volume >150% of 20-day average",
+          "M&A announcement with definitive agreement"
+        ]
+      },
+      "gates": [],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 43.5,
+          "momentum_rank": 46,
+          "return_5d_pct": 6.5,
+          "return_10d_pct": 20.5,
+          "return_20d_pct": 3.0,
+          "relative_strength_5d_pct": 7.0,
+          "rel_volume": 0.32,
+          "volume_zscore": -1.36,
+          "rsi_14": 58.4,
+          "atr_pct": 2.68
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.78,
+          "revenue_growth": -0.031,
+          "eps_growth": -0.686,
+          "gross_margin": 0.40734002,
+          "operating_margin": 0.08825,
+          "roe": 0.05094,
+          "forward_pe": 14.721199,
+          "pe_ratio": 38.130207,
+          "ev_to_ebitda": 12.089,
+          "fcf_yield": 0.040741,
+          "ebitda": 880200000.0,
+          "total_debt": 681100032.0,
+          "debt_to_ebitda": 0.77,
+          "debt_to_equity": 0.1187,
+          "current_ratio": 3.101,
+          "net_income": 477100000.0,
+          "revenue": 4086900000.0
+        },
+        "earnings": {
+          "latest_eps": 0.22,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.677,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "M_A,regulatory",
+          "concern_flags": "lawsuit",
+          "headline_count": 7,
+          "catalyst_strength": 0.73
+        }
+      },
+      "reused": false
+    },
+    {
+      "timestamp": "2026-09-04T18:11:31.822608",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "DG",
+      "momentum_score": 43.1,
+      "direction": "CALL",
+      "k2_confidence": 0.52,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.48,
+      "final_score": 0.575,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "DG exhibits solid intermediate-term momentum with 20.8% returns over 20 days and accelerating earnings growth (33.3% EPS growth, 33.8% quarterly earnings growth). The stock has outperformed the market on a 5-day basis (6.9% relative strength) in a confirmed bull regime. However, volume is critically low with a -1.81 z-score and 0.14 relative volume, indicating this move lacks institutional participation and may be vulnerable to reversal. The regulatory catalyst (strength 0.7) suggests potential policy tailwinds for discount retailers. Valuation is reasonable at 16x forward P/E with improving margins, though elevated debt (4.4x EBITDA) constrains financial flexibility. This is a momentum continuation play with limited conviction due to volume divergence.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "DG",
+        "direction": "CALL",
+        "confidence": 0.52,
+        "thesis": "DG exhibits solid intermediate-term momentum with 20.8% returns over 20 days and accelerating earnings growth (33.3% EPS growth, 33.8% quarterly earnings growth). The stock has outperformed the market on a 5-day basis (6.9% relative strength) in a confirmed bull regime. However, volume is critically low with a -1.81 z-score and 0.14 relative volume, indicating this move lacks institutional participation and may be vulnerable to reversal. The regulatory catalyst (strength 0.7) suggests potential policy tailwinds for discount retailers. Valuation is reasonable at 16x forward P/E with improving margins, though elevated debt (4.4x EBITDA) constrains financial flexibility. This is a momentum continuation play with limited conviction due to volume divergence.",
+        "momentum_quality": 0.45,
+        "fundamental_quality": 0.72,
+        "catalyst_strength": 0.55,
+        "risk_level": 0.68,
+        "expected_holding_days": 5,
+        "invalidation": "Volume fails to expand above 20-day average on any up day; RSI closes below 50; price breaks below 10-day EMA with increased volume",
+        "catalyst_classification": "POSITIVE",
+        "key_risks": [
+          "Volume divergence (-1.81 z-score) indicates weak institutional conviction and susceptibility to sharp reversals",
+          "High leverage (4.4x debt/EBITDA, 1.7x D/E) amplifies downside risk if macro conditions deteriorate",
+          "Extended intermediate-term returns (20.8% in 20 days) without volume confirmation suggests exhaustion risk"
+        ]
+      },
+      "qwen": {
+        "symbol": "DG",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.48,
+        "risk_score": 0.65,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "Volume remains critically low (0.14 rel_volume, -1.81 z-score), indicating weak institutional participation",
+          "High leverage (4.4x debt/EBITDA) increases vulnerability to macroeconomic shocks",
+          "20.8% 20-day returns without volume confirmation suggest potential exhaustion risk"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Volume fails to expand above 20-day average on any up day",
+          "RSI closes below 50 (current 56.3)",
+          "Price breaks below 10-day EMA with increased volume"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.48)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.52 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 43 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.57 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 43.1,
+          "momentum_rank": 47,
+          "return_5d_pct": 6.4,
+          "return_10d_pct": 11.5,
+          "return_20d_pct": 20.8,
+          "relative_strength_5d_pct": 6.9,
+          "rel_volume": 0.14,
+          "volume_zscore": -1.81,
+          "rsi_14": 56.3,
+          "atr_pct": 2.0
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.052,
+          "eps_growth": 0.333,
+          "gross_margin": 0.31160998,
+          "operating_margin": 0.06813,
+          "roe": 0.19692,
+          "forward_pe": 16.029015,
+          "pe_ratio": 17.129536,
+          "ev_to_ebitda": 12.044,
+          "fcf_yield": 0.059574,
+          "ebitda": 3581925888.0,
+          "total_debt": 15773100032.0,
+          "debt_to_ebitda": 4.4,
+          "debt_to_equity": 1.6981,
+          "current_ratio": 1.209,
+          "net_income": 1512311000.0,
+          "revenue": 42724369000.0
+        },
+        "earnings": {
+          "latest_eps": 2.0,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 0.338,
+          "next_earnings_date": "2026-08-27"
+        },
+        "catalysts": {
+          "catalyst_flags": "regulatory",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 0.7
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:12:12.729317",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "SMCI",
+      "momentum_score": 43.0,
+      "direction": "CALL",
+      "k2_confidence": 0.62,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.55,
+      "final_score": 0.582,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "SMCI exhibits strong fundamental momentum with 93% revenue growth and 435% EPS growth, paired with a raised guidance catalyst that has already been partially digested. The 26% 10-day return followed by a -1% 5-day pullback suggests a healthy consolidation rather than exhaustion, with RSI at 58.5 indicating room for further upside. The extremely low forward P/E of 7.4x relative to growth creates valuation asymmetry. Volume contraction during the pullback (0.31x relative, -0.68 z-score) suggests selling pressure is exhausted, setting up for a continuation move within a 3-6 day window.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "SMCI",
+        "direction": "CALL",
+        "confidence": 0.62,
+        "thesis": "SMCI exhibits strong fundamental momentum with 93% revenue growth and 435% EPS growth, paired with a raised guidance catalyst that has already been partially digested. The 26% 10-day return followed by a -1% 5-day pullback suggests a healthy consolidation rather than exhaustion, with RSI at 58.5 indicating room for further upside. The extremely low forward P/E of 7.4x relative to growth creates valuation asymmetry. Volume contraction during the pullback (0.31x relative, -0.68 z-score) suggests selling pressure is exhausted, setting up for a continuation move within a 3-6 day window.",
+        "momentum_quality": 0.58,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.75,
+        "risk_level": 0.72,
+        "expected_holding_days": 5,
+        "invalidation": "Close below 5-day low breaks pattern; RSI falls below 50 on volume expansion; relative volume spikes above 2.0x on red candles",
+        "catalyst_classification": "ALREADY_PRICED",
+        "key_risks": [
+          "High debt-to-EBITDA of 3.28x and negative FCF yield (-32%) expose vulnerability to rate shocks or funding stress",
+          "Extreme volatility with 3.89% ATR can trigger rapid stop-outs; momentum rank of 48 indicates mid-tier strength susceptible to rotation",
+          "Guidance raise catalyst may be fully priced after 26% run; lack of fresh near-term catalysts until November 2026 earnings limits upside catalysts"
+        ]
+      },
+      "qwen": {
+        "symbol": "SMCI",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.55,
+        "risk_score": 0.68,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "ALREADY_PRICED",
+        "concerns": [
+          "High debt-to-EBITDA (3.28x) and negative FCF yield (-32%) increase vulnerability to macro risks",
+          "3.89% ATR and momentum rank 48 suggest volatility and rotation risk",
+          "Guidance raise catalyst may be fully priced after 26% 10-day run"
+        ],
+        "contradictions": [],
+        "invalidation_conditions": [
+          "Close below 5-day low (current 5-day low: $X.XX)",
+          "RSI falls below 50 with volume expansion (volume > 1.0x average)",
+          "Relative volume spikes above 2.0x on red candles (volume > 2.0x average)"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.55)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.62 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 43 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.58 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 43.0,
+          "momentum_rank": 48,
+          "return_5d_pct": -1.0,
+          "return_10d_pct": 26.3,
+          "return_20d_pct": 19.9,
+          "relative_strength_5d_pct": -0.5,
+          "rel_volume": 0.31,
+          "volume_zscore": -0.68,
+          "rsi_14": 58.5,
+          "atr_pct": 3.89
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.89,
+          "revenue_growth": 0.932,
+          "eps_growth": 4.347,
+          "gross_margin": 0.108219996,
+          "operating_margin": 0.13382,
+          "roe": 0.21465999,
+          "forward_pe": 7.3686795,
+          "pe_ratio": 11.75,
+          "ev_to_ebitda": 10.913,
+          "fcf_yield": -0.319936,
+          "ebitda": 2824158976.0,
+          "total_debt": 9259886592.0,
+          "debt_to_ebitda": 3.28,
+          "debt_to_equity": 0.6395,
+          "current_ratio": 3.872,
+          "net_income": 2230453000.0,
+          "revenue": 39063072000.0
+        },
+        "earnings": {
+          "latest_eps": 0.72,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": 5.037,
+          "next_earnings_date": "2026-11-03"
+        },
+        "catalysts": {
+          "catalyst_flags": "guidance_raised",
+          "concern_flags": "",
+          "headline_count": 10,
+          "catalyst_strength": 1.0
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
+    },
+    {
+      "timestamp": "2026-09-04T18:13:11.466006",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "GPC",
+      "momentum_score": 42.8,
+      "direction": "PUT",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.52,
+      "final_score": 0.486,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "GPC exhibits classic momentum exhaustion signals: a 37.9% 20-day return with collapsing volume (0.13x relative volume, -1.16 z-score) and decelerating short-term returns (1.6% over 5 days vs 11% over 10 days). The RSI at 55.3 shows the stock has cooled from overbought levels without volume confirmation of continued buying interest. Fundamentals reveal severe valuation disconnect: a 547.48 P/E with negative EPS growth (-9.8%) and declining earnings (-10.7% quarterly). The regulatory catalyst at 0.62 strength appears insufficient to sustain this move. The 3.24 debt/EBITDA and weak ROE (0.7%) suggest limited fundamental support for current prices. This creates an asymmetric short opportunity as momentum fades into an overextended technical structure.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "GPC",
+        "direction": "PUT",
+        "confidence": 0.58,
+        "thesis": "GPC exhibits classic momentum exhaustion signals: a 37.9% 20-day return with collapsing volume (0.13x relative volume, -1.16 z-score) and decelerating short-term returns (1.6% over 5 days vs 11% over 10 days). The RSI at 55.3 shows the stock has cooled from overbought levels without volume confirmation of continued buying interest. Fundamentals reveal severe valuation disconnect: a 547.48 P/E with negative EPS growth (-9.8%) and declining earnings (-10.7% quarterly). The regulatory catalyst at 0.62 strength appears insufficient to sustain this move. The 3.24 debt/EBITDA and weak ROE (0.7%) suggest limited fundamental support for current prices. This creates an asymmetric short opportunity as momentum fades into an overextended technical structure.",
+        "momentum_quality": 0.35,
+        "fundamental_quality": 0.42,
+        "catalyst_strength": 0.45,
+        "risk_level": 0.72,
+        "expected_holding_days": 5,
+        "invalidation": "Close above prior 10-day high with volume >1.5x average; RSI breaks above 65 with sustained buying; positive earnings revision or regulatory resolution announced",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "Regulatory catalyst could resolve positively and trigger short-covering rally",
+          "Low float or institutional accumulation could sustain price despite weak volume metrics",
+          "Broad market bull regime may lift all boats and override individual exhaustion signals"
+        ]
+      },
+      "qwen": {
+        "symbol": "GPC",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.52,
+        "risk_score": 0.72,
+        "momentum_assessment": "EXHAUSTED",
+        "fundamental_assessment": "NEGATIVE",
+        "catalyst_assessment": "NEUTRAL",
+        "concerns": [
+          "Momentum exhaustion confirmed by 5D return (1.6%) being 0.145x the 10D return (11%) and rel_volume at 0.13x",
+          "Valuation disconnect with P/E of 547.48 despite -9.8% EPS growth and -10.7% quarterly earnings decline",
+          "Weak ROE (0.7%) and high debt/EBITDA (3.24) limit fundamental support for current price"
+        ],
+        "contradictions": [
+          "Fundamental_quality score of 0.78 in evidence contradicts thesis's 'severe valuation disconnect' claim, but this likely reflects sector-specific metrics (e.g., SaaS deferred revenue liabilities) rather than actual strength"
+        ],
+        "invalidation_conditions": [
+          "Close above prior 10-day high ($X.XX) with volume >1.5x average (20D avg volume: $X.XX)",
+          "RSI_14 breaks above 65 with volume >1.5x 20D average",
+          "Positive earnings revision announced before 2026-10-20"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 43 >= 40"
+        ],
+        [
+          "Final score",
+          false,
+          "Final score 0.49 below 0.50"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 42.8,
+          "momentum_rank": 49,
+          "return_5d_pct": 1.6,
+          "return_10d_pct": 11.0,
+          "return_20d_pct": 37.9,
+          "relative_strength_5d_pct": 2.1,
+          "rel_volume": 0.13,
+          "volume_zscore": -1.16,
+          "rsi_14": 55.3,
+          "atr_pct": 1.78
+        },
+        "fundamentals": {
+          "fundamental_quality": 0.78,
+          "revenue_growth": 0.06,
+          "eps_growth": -0.098,
+          "gross_margin": 0.37564,
+          "operating_margin": 0.06562,
+          "roe": 0.0070700003,
+          "forward_pe": 16.48085,
+          "pe_ratio": 547.48,
+          "ev_to_ebitda": 12.221,
+          "fcf_yield": 0.048611,
+          "ebitda": 2052585984.0,
+          "total_debt": 6652785152.0,
+          "debt_to_ebitda": 3.24,
+          "debt_to_equity": 1.4641,
+          "current_ratio": 1.159,
+          "net_income": 65945000.0,
+          "revenue": 24300141000.0
+        },
+        "earnings": {
+          "latest_eps": 1.65,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.107,
+          "next_earnings_date": "2026-10-20"
+        },
+        "catalysts": {
+          "catalyst_flags": "regulatory",
+          "concern_flags": "",
+          "headline_count": 8,
+          "catalyst_strength": 0.62
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Final score too low"
+    },
+    {
+      "timestamp": "2026-09-04T18:13:52.289865",
+      "run_id": "2026-09-04T17:03:46",
+      "symbol": "CPRT",
+      "momentum_score": 42.5,
+      "direction": "CALL",
+      "k2_confidence": 0.58,
+      "qwen_recommendation": "APPROVE",
+      "qwen_confidence": 0.52,
+      "final_score": 0.597,
+      "approved": true,
+      "reject_reason": null,
+      "thesis": "CPRT exhibits strong intermediate-term momentum with a 19.8% 10-day return, suggesting institutional accumulation following potential M&A catalysts. The stock pulled back modestly on low volume (rel_volume 0.16, volume_zscore -1.9), indicating profit-taking rather than distribution, with RSI at 57.8 leaving room for further upside before overbought conditions. Fundamentally, the company displays exceptional quality with minimal leverage (debt/EBITDA 0.05), strong margins (37.5% operating), and reasonable valuation at ~20x forward earnings. The mixed analyst activity (upgrades and downgrades) with M&A flags suggests ongoing strategic interest that could drive continued price appreciation over the next 3-5 days as the market digests catalyst implications.",
+      "regime": "BULL",
+      "k2": {
+        "symbol": "CPRT",
+        "direction": "CALL",
+        "confidence": 0.58,
+        "thesis": "CPRT exhibits strong intermediate-term momentum with a 19.8% 10-day return, suggesting institutional accumulation following potential M&A catalysts. The stock pulled back modestly on low volume (rel_volume 0.16, volume_zscore -1.9), indicating profit-taking rather than distribution, with RSI at 57.8 leaving room for further upside before overbought conditions. Fundamentally, the company displays exceptional quality with minimal leverage (debt/EBITDA 0.05), strong margins (37.5% operating), and reasonable valuation at ~20x forward earnings. The mixed analyst activity (upgrades and downgrades) with M&A flags suggests ongoing strategic interest that could drive continued price appreciation over the next 3-5 days as the market digests catalyst implications.",
+        "momentum_quality": 0.62,
+        "fundamental_quality": 0.85,
+        "catalyst_strength": 0.55,
+        "risk_level": 0.52,
+        "expected_holding_days": 5,
+        "invalidation": "Close below the 10-day moving average on above-average volume; RSI breaks below 50 on expanding volume; failure to hold 5-day return gains with volume confirmation",
+        "catalyst_classification": "UNCERTAIN",
+        "key_risks": [
+          "M&A speculation may already be partially priced in given the 19.8% 10-day run-up, limiting further upside",
+          "Extremely low relative volume (0.16) indicates weak participation; any selling pressure could accelerate quickly without buyer support",
+          "Earnings growth has turned negative (-1% quarterly), creating fundamental-momentum divergence that could resolve to the downside"
+        ]
+      },
+      "qwen": {
+        "symbol": "CPRT",
+        "recommendation": "APPROVE",
+        "thesis_valid": true,
+        "adjusted_confidence": 0.52,
+        "risk_score": 0.58,
+        "momentum_assessment": "ADEQUATE",
+        "fundamental_assessment": "POSITIVE",
+        "catalyst_assessment": "POSITIVE",
+        "concerns": [
+          "M&A speculation may already be partially priced in given the 19.8% 10-day run-up",
+          "Extremely low relative volume (0.16) indicates weak participation; any selling pressure could accelerate quickly",
+          "Earnings growth has turned negative (-1% quarterly), creating fundamental-momentum divergence"
+        ],
+        "contradictions": [
+          "10-day return (19.8%) significantly outpaces 5-day return (5.7%), indicating decelerating momentum",
+          "Negative quarterly earnings growth (-1%) contrasts with positive price action"
+        ],
+        "invalidation_conditions": [
+          "Close below 10-day moving average (calculated from 19.8% return) on volume > 1.5x average volume (rel_volume > 0.24)",
+          "RSI_14 closes below 50 with volume_zscore > -1.0",
+          "Failure to hold 5-day return gains (5.7%) with volume confirmation (rel_volume > 0.8)"
+        ]
+      },
+      "gates": [
+        [
+          "AI: Qwen critic",
+          true,
+          "Qwen approved (adj_confidence=0.52)"
+        ],
+        [
+          "AI: K2 confidence",
+          true,
+          "K2 confidence 0.58 >= 0.5"
+        ],
+        [
+          "Momentum",
+          true,
+          "Score 42 >= 40"
+        ],
+        [
+          "Final score",
+          true,
+          "Final score 0.60 >= 0.50"
+        ],
+        [
+          "Market regime",
+          true,
+          "OK"
+        ],
+        [
+          "Max positions",
+          false,
+          "Max open positions (5) already reached (5 positions)"
+        ]
+      ],
+      "evidence": {
+        "momentum": {
+          "momentum_score": 42.5,
+          "momentum_rank": 50,
+          "return_5d_pct": 5.7,
+          "return_10d_pct": 19.8,
+          "return_20d_pct": 6.2,
+          "relative_strength_5d_pct": 6.2,
+          "rel_volume": 0.16,
+          "volume_zscore": -1.9,
+          "rsi_14": 57.8,
+          "atr_pct": 1.94
+        },
+        "fundamentals": {
+          "fundamental_quality": 1.0,
+          "revenue_growth": 0.021,
+          "eps_growth": 0.023,
+          "gross_margin": 0.47522998,
+          "operating_margin": 0.37530997,
+          "roe": 0.17607,
+          "forward_pe": 19.887465,
+          "pe_ratio": 19.880955,
+          "ev_to_ebitda": 13.766,
+          "fcf_yield": 0.032339,
+          "ebitda": 1961246976.0,
+          "total_debt": 93116000.0,
+          "debt_to_ebitda": 0.05,
+          "debt_to_equity": 0.0106,
+          "current_ratio": 7.613,
+          "net_income": 1552449000.0,
+          "revenue": 4646958000.0
+        },
+        "earnings": {
+          "latest_eps": 0.43,
+          "eps_surprise": null,
+          "earnings_quarterly_growth": -0.01,
+          "next_earnings_date": "2026-09-10"
+        },
+        "catalysts": {
+          "catalyst_flags": "M_A,analyst_downgrade,analyst_upgrade",
+          "concern_flags": "",
+          "headline_count": 7,
+          "catalyst_strength": 0.68
+        }
+      },
+      "reused": false,
+      "risk_approved": false,
+      "risk_reason": "Max open positions (5) already reached (5 positions)"
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "trade_id": "TRADE_20260904_181827_NOW",
+      "symbol": "NOW",
+      "option_symbol": "NOW260918P00145000",
+      "direction": "PUT",
+      "entry_time": "2026-09-04T18:18:27.467215",
+      "entry_price": 8.15,
+      "quantity": 1,
+      "thesis": "NOW exhibits classic momentum exhaustion signals despite strong recent returns. The 45.4% 10-day return and 30.3% 20-day return represent unsustainable parabolic acceleration, while volume has collapsed to 0.31 relative average with a -1.27 z-score\u2014indicating institutional distribution and lack of conviction at highs. RSI at 59.4 is neutral but the volume divergence suggests weakening participation. The regulatory catalyst flagged carries uncertainty and may already be priced into extended valuations. With forward PE of 28x but trailing PE of 88x, negative earnings growth (-22.6%), and concerning liquidity metrics (current ratio 0.70, debt/EBITDA 2.92x), the risk/reward favors mean reversion over 3-5 days as hot money exits.",
+      "invalidation": "Close above 10-day high with volume >1.5x average; RSI breakout above 65 with sustained buying pressure; positive earnings revision or regulatory clarity announced",
+      "confidence": 0.52,
+      "expected_holding_days": 4,
+      "max_holding_days": 10,
+      "entry_momentum_rank": 50,
+      "entry_close": 33.369998931884766,
+      "order_id": "67ba6f66-2a68-4b0c-84a4-0dd7a4f74966",
+      "exit_time": "2026-09-04T18:18:41.274492",
+      "exit_price": 7.89,
+      "exit_reason": "Price $141.65 above 20 EMA $119.10 \u2014 thesis invalidated",
+      "pnl": -26.0,
+      "holding_days": 0
+    },
+    {
+      "trade_id": "TRADE_20260904_181831_COIN",
+      "symbol": "COIN",
+      "option_symbol": "COIN260911C00185000",
+      "direction": "CALL",
+      "entry_time": "2026-09-04T18:18:31.261559",
+      "entry_price": 5.76,
+      "quantity": 1,
+      "thesis": "COIN exhibits strong short-term momentum with 23% 5-day returns and 16.3% 10-day returns, suggesting a healthy uptrend rather than parabolic exhaustion given the moderate RSI of 54. The regulatory catalyst strength of 0.7 with 10 headlines indicates ongoing positive sentiment likely tied to crypto-friendly policy developments under the current administration. Despite weak traditional fundamentals (negative revenue growth, high debt/EBITDA of 9.53), COIN trades as a crypto proxy where momentum and sentiment override fundamentals. The low relative volume (0.54) and negative volume z-score (-0.73) suggest the move hasn't attracted excessive retail FOMO, leaving room for continuation. The 3.59% ATR provides sufficient volatility for asymmetric short-term gains.",
+      "invalidation": "Price closes below the 10-day moving average; RSI drops below 45 on increasing volume; negative regulatory headline emerges with volume spike above 2x average",
+      "confidence": 0.62,
+      "expected_holding_days": 5,
+      "max_holding_days": 10,
+      "entry_momentum_rank": 50,
+      "entry_close": 33.369998931884766,
+      "order_id": "e817299b-97a7-4f4c-9c3e-39bafafe172a",
+      "exit_time": null,
+      "exit_price": null,
+      "exit_reason": "",
+      "pnl": null
+    },
+    {
+      "trade_id": "TRADE_20260904_181834_EL",
+      "symbol": "EL",
+      "option_symbol": "EL260925P00104000",
+      "direction": "PUT",
+      "entry_time": "2026-09-04T18:18:34.031193",
+      "entry_price": 4.18,
+      "quantity": 2,
+      "thesis": "EL displays classic momentum exhaustion signals with 25.9% gains in 10 days but declining volume participation (rel_volume 0.89, volume_zscore -0.15), indicating weak institutional conviction. The stock trades at extreme valuation multiples (P/E 203.58, forward P/E 26) despite deteriorating profitability (operating margin 7%, ROE 4.7%) and heavy debt load (debt-to-EBITDA 3.77). Negative catalysts including lawsuits and layoffs combined with regulatory overhang create asymmetric downside risk as the bullish regime faces mean reversion pressure from overstretched technicals.",
+      "invalidation": "Close above 10-day high on volume 1.5x average; RSI breaks above 70 with sustained momentum; positive resolution of regulatory concerns with concrete timeline",
+      "confidence": 0.52,
+      "expected_holding_days": 5,
+      "max_holding_days": 10,
+      "entry_momentum_rank": 50,
+      "entry_close": 33.369998931884766,
+      "order_id": "db667694-3c8c-40c4-a3b2-d12905a4b11c",
+      "exit_time": null,
+      "exit_price": null,
+      "exit_reason": "",
+      "pnl": null
+    },
+    {
+      "trade_id": "TRADE_20260904_181837_NEM",
+      "symbol": "NEM",
+      "option_symbol": "NEM260918C00130000",
+      "direction": "CALL",
+      "entry_time": "2026-09-04T18:18:37.580934",
+      "entry_price": 3.62,
+      "quantity": 2,
+      "thesis": "NEM exhibits strong price momentum with 35.6% gains over 10 days in a confirmed bull regime, supported by analyst upgrades and regulatory catalysts. The stock shows healthy deceleration from parabolic 10-day to 5-day returns, suggesting sustainable trend rather than exhaustion. Despite low relative volume, fundamentals are robust with 15.1% revenue growth, strong margins, and reasonable valuation at 12.6x forward PE. The momentum rank of 9 indicates institutional accumulation, and RSI at 63.7 leaves room for further upside before overbought conditions.",
+      "invalidation": "Close below 5-day EMA on above-average volume; RSI breaks above 75 with volume spike indicating blow-off top; gold price drops >3% in single session breaking correlation.",
+      "confidence": 0.68,
+      "expected_holding_days": 5,
+      "max_holding_days": 10,
+      "entry_momentum_rank": 50,
+      "entry_close": 33.369998931884766,
+      "order_id": "2a3c29a4-911f-44ae-b0a7-d63ee6ed7462",
+      "exit_time": null,
+      "exit_price": null,
+      "exit_reason": "",
+      "pnl": null
+    },
+    {
+      "trade_id": "TRADE_20260904_181840_CTSH",
+      "symbol": "CTSH",
+      "option_symbol": "CTSH260918C00060000",
+      "direction": "CALL",
+      "entry_time": "2026-09-04T18:18:40.039589",
+      "entry_price": 3.55,
+      "quantity": 2,
+      "thesis": "CTSH exhibits strong intermediate-term momentum with a 41% 10-day return and 20.7% 20-day return, suggesting institutional accumulation. The RSI of 66.6 indicates momentum without extreme overbought conditions. However, volume metrics are concerning\u2014relative volume at 0.12 and volume z-score of -1.48 show the recent price advance occurred on declining participation, signaling potential exhaustion. The fundamental profile is solid with reasonable valuation (forward P/E ~10, EV/EBITDA 7.5) and strong balance sheet (debt/EBITDA 0.52, current ratio 2.18), but earnings growth is slightly negative (-1.4%). The regulatory catalyst flag with 0.7 strength suggests potential policy tailwinds for IT services/consulting. Given the volume divergence, this is a lower-confidence continuation play targeting a 3-5 day hold to capture any residual momentum before potential consolidation.",
+      "invalidation": "1) Daily close below the 5-day EMA or 3% pullback from recent highs; 2) Volume spike above 2x average on a down day indicating distribution; 3) RSI breaks below 55 on closing basis",
+      "confidence": 0.58,
+      "expected_holding_days": 4,
+      "max_holding_days": 10,
+      "entry_momentum_rank": 50,
+      "entry_close": 33.369998931884766,
+      "order_id": "850a4621-3136-442f-b29c-441e936162f5",
+      "exit_time": null,
+      "exit_price": null,
+      "exit_reason": "",
+      "pnl": null
+    }
+  ],
   "reports": [
     {
       "timestamp": "2026-09-04T16:56:39.100642",
@@ -3529,6 +6868,478 @@
           "final_score": 0.693,
           "why_approved_or_rejected": "Approved for strong multi-timeframe momentum with exceptional 20-day returns. Both agents accepted the momentum thesis despite Qwen's strong warnings about critically weak volume participation.",
           "key_concern": "Volume participation is critically weak (0.13 rel_volume, -1.82 z-score), increasing false breakout risk"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-04T18:18:21.096980",
+      "run_id": "2026-09-04T17:03:46",
+      "cycle_number": 2,
+      "regime": "BULL",
+      "total_candidates": 50,
+      "total_approved": 38,
+      "total_rejected": 12,
+      "summary": "Cycle #2 operated in a BULL market regime, which typically favors momentum continuation strategies. This environment led to a high approval rate (38 of 50 candidates), with the system primarily selecting CALL trades (26) to ride the prevailing uptrend, while also identifying contrarian PUT opportunities (12) for stocks showing momentum exhaustion. The approved candidates were dominated by technology (e.g., NOW, PLTR, DELL, MSFT, SMCI), energy (MPC, VLO, PSX, FCX), and healthcare (EL, MRK, VRTX) sectors, reflecting both bullish momentum plays and selective mean-reversion bets against overextended rallies.\n\nThe approved trades were selected based on a consensus between K2 Analyst and Qwen Critic that identified sustainable momentum or clear exhaustion signals. For CALLS, the consensus centered on stocks with strong multi-timeframe returns, reasonable RSI levels (not overbought), and supportive fundamentals like earnings growth, even when volume confirmation was weak. For PUTS, the consensus identified classic divergence: strong price gains on collapsing volume, decelerating short-term returns, and unsustainable parabolic moves. Qwen typically adjusted confidence downward due to volume concerns but still approved when the core thesis remained valid.\n\nRejected candidates were primarily vetoed by Qwen Critic (11 of 12 rejections), with only one case (WDAY) involving a hard rule violation (earnings date within holding period). Qwen's rejections focused on fundamental contradictions (negative EPS growth contradicting price action), severe volume divergence undermining the momentum thesis, or valuation disconnects too extreme to justify continuation. The deterministic risk engine did not trigger additional rejections beyond the earnings gate. The cycle's decisions appear well-calibrated, with Qwen providing necessary skepticism in a bull market by rejecting low-conviction momentum plays while allowing higher-quality trends to proceed, resulting in a balanced portfolio of directional and contrarian positions.",
+      "verdicts": [
+        {
+          "symbol": "NOW",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.613,
+          "why_approved_or_rejected": "Approved for a PUT due to consensus on momentum exhaustion. K2 identified unsustainable parabolic acceleration (45.4% 10-day return), while Qwen noted volume collapse and high trailing P/E indicating institutional unloading.",
+          "key_concern": "Volume at 0.31x average with -1.27 z-score suggests institutional unloading"
+        },
+        {
+          "symbol": "COIN",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.625,
+          "why_approved_or_rejected": "Approved for a CALL based on healthy uptrend momentum. K2 noted strong short-term returns with moderate RSI, while Qwen approved despite concerns about high debt and regulatory risk.",
+          "key_concern": "High debt/EBITDA of 9.53x creates structural vulnerability to crypto volume declines"
+        },
+        {
+          "symbol": "EL",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.577,
+          "why_approved_or_rejected": "Approved for a PUT due to momentum exhaustion signals. K2 identified strong gains with declining volume participation, while Qwen approved despite bull market regime risks.",
+          "key_concern": "Bull market regime could sustain irrational momentum longer than expected"
+        },
+        {
+          "symbol": "IQV",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.602,
+          "why_approved_or_rejected": "Rejected because Qwen critic failed, triggering automatic rejection for safety. K2 had proposed a CALL based on strong price momentum and institutional accumulation.",
+          "key_concern": "Qwen critic failed \u2014 automatic rejection for safety"
+        },
+        {
+          "symbol": "NEM",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.705,
+          "why_approved_or_rejected": "Approved for a CALL based on strong momentum in a bull regime. K2 noted healthy deceleration from parabolic moves, while Qwen approved despite volume contraction concerns.",
+          "key_concern": "Volume contraction (rel_volume=0.37, z-score=-1.73) suggests weak conviction in the rally"
+        },
+        {
+          "symbol": "CTSH",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.632,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited institutional accumulation from strong returns, while Qwen approved but noted volume divergence and negative EPS growth creating fundamental disconnect.",
+          "key_concern": "Volume divergence (rel_volume 0.12, z-score -1.48) suggests weak conviction in the recent price advance"
+        },
+        {
+          "symbol": "WDAY",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.538,
+          "why_approved_or_rejected": "Rejected by Qwen due to earnings date violation. K2 proposed a CALL based on strong momentum, but Qwen rejected because the thesis suggested holding through an August 2026 earnings date, violating MVP hard reject rules.",
+          "key_concern": "Earnings date (2026-08-27) falls within the proposed 5-day holding period, violating MVP hard reject rules"
+        },
+        {
+          "symbol": "PLTR",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.631,
+          "why_approved_or_rejected": "Approved for a CALL based on strong fundamental momentum. K2 highlighted exceptional revenue and EPS growth, while Qwen approved despite elevated valuation multiples.",
+          "key_concern": "Forward PE (76.5) and EV/EBITDA (161) are significantly elevated relative to growth rates"
+        },
+        {
+          "symbol": "MOS",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.47,
+          "why_approved_or_rejected": "Rejected because Qwen critic failed, triggering automatic rejection for safety. K2 had proposed a CALL based on intermediate-term momentum and institutional accumulation.",
+          "key_concern": "Qwen critic failed \u2014 automatic rejection for safety"
+        },
+        {
+          "symbol": "MPC",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.685,
+          "why_approved_or_rejected": "Approved for a CALL based on strong fundamental momentum. K2 highlighted exceptional earnings growth and operational metrics, while Qwen approved despite low volume participation.",
+          "key_concern": "Volume remains 62% below average (rel_volume 0.38) despite strong price action, suggesting limited institutional participation"
+        },
+        {
+          "symbol": "DELL",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.733,
+          "why_approved_or_rejected": "Approved for a CALL based on strong multi-timeframe momentum. K2 noted sustained uptrend with reasonable RSI, while Qwen approved despite volume contraction and balance sheet concerns.",
+          "key_concern": "Volume contraction (rel_volume 0.74, volume_zscore -0.32) suggests declining participation and potential for false breakouts"
+        },
+        {
+          "symbol": "CRL",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.489,
+          "why_approved_or_rejected": "Approved for a PUT due to classic exhaustion signals. K2 identified strong gains with collapsing volume indicating institutional distribution, while Qwen approved despite fundamental contradictions.",
+          "key_concern": "Volume collapse (0.14x rel_volume) suggests lack of buyer participation despite 52.6% 20-day return"
+        },
+        {
+          "symbol": "TYL",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.714,
+          "why_approved_or_rejected": "Approved for a CALL based on strong price momentum. K2 noted sustained uptrend, while Qwen approved despite volume confirmation failure and valuation compression risk.",
+          "key_concern": "Volume confirmation failure - price rising on air with rel_volume at 0.21 signals weak conviction"
+        },
+        {
+          "symbol": "RVTY",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.602,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited strong momentum and analyst support, while Qwen approved but noted critically weak volume and stretched valuation with negative earnings growth.",
+          "key_concern": "Volume remains critically weak (rel_volume=0.19, volume_zscore=-1.66), creating liquidity risk and false breakout potential"
+        },
+        {
+          "symbol": "MRK",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.605,
+          "why_approved_or_rejected": "Approved for a PUT due to classic momentum divergence. K2 identified strong gains on collapsing volume indicating distribution, while Qwen approved despite decelerating momentum and high P/E.",
+          "key_concern": "Momentum is decelerating in short term (5D return 11.4% < 10D 14.7%) with volume at 14% of average (rel_volume 0.14, z-score -1.45)"
+        },
+        {
+          "symbol": "VLO",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.654,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum and earnings growth. K2 noted strong returns with regulatory catalyst, while Qwen approved despite volume exhaustion and near-overbought RSI.",
+          "key_concern": "Volume exhaustion (rel_volume 0.41, z-score -2.04) suggests weak institutional participation"
+        },
+        {
+          "symbol": "ZBRA",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.559,
+          "why_approved_or_rejected": "Approved for a CALL based on strong intermediate-term momentum with recent pullback. K2 saw the pullback on low volume as healthy, while Qwen approved despite leverage risks and thin volume.",
+          "key_concern": "Elevated debt/EBITDA (2.5x) and weak current ratio (0.516) create leverage risk if momentum stalls"
+        },
+        {
+          "symbol": "DE",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.591,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited sustained institutional accumulation from multi-timeframe momentum, while Qwen approved but noted severe volume divergence and declining fundamentals.",
+          "key_concern": "Severe volume divergence (rel_volume 0.26, volume_zscore -1.4) suggests weak institutional conviction and potential for sharp reversal"
+        },
+        {
+          "symbol": "PSX",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.631,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum and exceptional earnings growth. K2 highlighted strong returns and solid fundamentals, while Qwen approved despite volume divergence and near-overbought RSI.",
+          "key_concern": "Volume divergence (0.35 rel_volume, -2.36 z-score) suggests weak institutional conviction"
+        },
+        {
+          "symbol": "ACN",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.662,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum. K2 noted sustained uptrend, while Qwen approved despite low relative volume and near-overbought RSI with deceleration signals.",
+          "key_concern": "Low relative volume (0.15) increases risk of false breakouts and liquidity gaps"
+        },
+        {
+          "symbol": "IT",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.54,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited strong momentum and attractive valuation, while Qwen approved but noted critically weak volume and revenue decline contradicting EPS growth.",
+          "key_concern": "Volume profile is critically weak (0.1x relative volume, -1.92 z-score) limiting institutional participation"
+        },
+        {
+          "symbol": "PSKY",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.61,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited recent price momentum suggesting accumulation, while Qwen approved but noted extreme volume drought and valuation disconnect with negative net income.",
+          "key_concern": "Extreme volume drought (rel_volume 0.1) creates liquidity risk for position exit"
+        },
+        {
+          "symbol": "ULTA",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.685,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum in a bull regime. K2 noted strong returns with slight deceleration, while Qwen approved despite weak volume participation and limited RSI room.",
+          "key_concern": "Relative volume (0.22x) and negative volume z-score (-1.79) indicate weak institutional participation"
+        },
+        {
+          "symbol": "CMG",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.546,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 cited sustained uptrend momentum, while Qwen approved but noted extremely low volume contradicting the thesis and fundamental vulnerabilities.",
+          "key_concern": "Extremely low volume (rel_volume 0.14, z-score -1.77) suggests lack of institutional conviction and liquidity risk"
+        },
+        {
+          "symbol": "REGN",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.576,
+          "why_approved_or_rejected": "Rejected by Qwen due to multiple contradictions. K2 proposed a CALL based on intermediate-term momentum and institutional accumulation, but Qwen rejected because of exhausted momentum, volume drought contradicting accumulation, and negative EPS growth.",
+          "key_concern": "Momentum is exhausted (5D return 3.6% is 0.14x of 20D return 37.2%, with rel_volume 0.25x and volume_zscore -2.02)"
+        },
+        {
+          "symbol": "HPQ",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.506,
+          "why_approved_or_rejected": "Approved for a PUT due to momentum exhaustion signals. K2 identified deceleration with collapsed volume, while Qwen approved despite momentum being only marginally exhausted and bull market risks.",
+          "key_concern": "5-day return (5.4%) is marginally below 25% of 10-day return (5.9%), suggesting momentum normalization rather than full exhaustion"
+        },
+        {
+          "symbol": "CF",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.657,
+          "why_approved_or_rejected": "Approved for a CALL based on multi-timeframe momentum and strong fundamentals. K2 noted institutional accumulation in a bull regime, while Qwen approved despite weak volume participation and potential short-term exhaustion.",
+          "key_concern": "Volume_zscore of -1.76 indicates weak participation, raising risk of false breakout or quick reversal"
+        },
+        {
+          "symbol": "VRTX",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.563,
+          "why_approved_or_rejected": "Approved for a PUT due to momentum deceleration with volume divergence. K2 identified decelerating momentum on critically low volume, while Qwen approved despite M&A speculation risks.",
+          "key_concern": "Volume remains critically low (rel_volume 0.11, z-score -1.7) despite recent gains, signaling potential exhaustion"
+        },
+        {
+          "symbol": "MSFT",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.588,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum following AI/cloud tailwinds. K2 noted powerful trend with M&A catalyst, while Qwen approved despite volume collapse and momentum deceleration.",
+          "key_concern": "Volume collapse (rel_volume 0.18, z-score -1.16) suggests lack of institutional conviction"
+        },
+        {
+          "symbol": "FDS",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.555,
+          "why_approved_or_rejected": "Approved for a PUT due to classic divergence between price momentum and volume. K2 identified rally on severely depressed volume, while Qwen approved despite negative EPS growth contradicting the price advance.",
+          "key_concern": "Rally is occurring on severely depressed volume (0.1x) and negative volume z-score (-1.93), suggesting weak institutional support"
+        },
+        {
+          "symbol": "ABNB",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.558,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum with healthy consolidation. K2 noted strong returns despite recent pullback, while Qwen approved despite extended valuation and low relative volume.",
+          "key_concern": "Extended valuation metrics (PE 41.2, EV/EBITDA 36.1) leave limited margin for error on any fundamental disappointment"
+        },
+        {
+          "symbol": "GILD",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.638,
+          "why_approved_or_rejected": "Rejected by Qwen due to fundamental contradictions. K2 proposed a CALL based on strong price momentum and reasonable valuation, but Qwen rejected because of inconsistent financials (positive net income but negative EPS) and lack of institutional conviction.",
+          "key_concern": "Contradiction: Net income is positive ($8.5B) but latest EPS is -$8.45, indicating potential accounting anomalies or share count distortions"
+        },
+        {
+          "symbol": "TGT",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.555,
+          "why_approved_or_rejected": "Approved for a PUT due to momentum exhaustion signals. K2 identified deceleration with collapsed volume, while Qwen approved despite strong EPS growth providing fundamental support for dip-buying.",
+          "key_concern": "Volume collapse (0.15x rel_volume) suggests institutional participation has withdrawn"
+        },
+        {
+          "symbol": "GEN",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.51,
+          "why_approved_or_rejected": "Approved for a PUT due to momentum divergence with decelerating performance on weak volume. K2 identified concerning divergence, while Qwen approved despite high leverage and lack of near-term catalysts.",
+          "key_concern": "Decelerating momentum (5D: +6.4% < 10D: +18.7%) with volume z-score -1.76 suggests weak conviction"
+        },
+        {
+          "symbol": "JKHY",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.593,
+          "why_approved_or_rejected": "Rejected by Qwen due to contradictions. K2 proposed a CALL based on multi-timeframe momentum and reasonable valuation, but Qwen rejected because volume divergence contradicted the bullish thesis and EPS growth was negative.",
+          "key_concern": "Volume divergence (-1.74 z-score, 0.2 rel_volume) contradicts bullish momentum thesis"
+        },
+        {
+          "symbol": "AMGN",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.54,
+          "why_approved_or_rejected": "Rejected by Qwen due to contradictions. K2 proposed a CALL based on intermediate-term momentum and robust fundamentals, but Qwen rejected because volume contraction contradicted the thesis and balance sheet vulnerability was high.",
+          "key_concern": "Volume contraction (rel_volume 0.15, z-score -1.86) contradicts bullish momentum thesis and increases slippage risk"
+        },
+        {
+          "symbol": "DASH",
+          "approved": false,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.57,
+          "why_approved_or_rejected": "Rejected by Qwen due to contradictions. K2 proposed a CALL based on medium-term momentum in a bull regime, but Qwen rejected because negative EPS growth and extreme valuation multiples contradicted the 'robust fundamental trajectory' claim.",
+          "key_concern": "Negative EPS growth (-30%) contradicts revenue growth, signaling margin compression or operational inefficiencies"
+        },
+        {
+          "symbol": "FCX",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.63,
+          "why_approved_or_rejected": "Approved for a CALL based on healthy intermediate-term momentum. K2 noted sustained uptrend with reasonable RSI, while Qwen approved despite volume contraction and stretched valuation with negative revenue growth.",
+          "key_concern": "Volume contraction (rel_volume 0.15, z-score -1.96) suggests weak institutional participation and potential for sharp reversals"
+        },
+        {
+          "symbol": "APA",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.528,
+          "why_approved_or_rejected": "Approved for a PUT despite a contradiction. K2 identified momentum divergence with gains on depressed volume, while Qwen approved but noted the 5-day return didn't fully meet exhaustion criteria.",
+          "key_concern": "Volume divergence (rel_volume 0.35, volume_zscore -2.06) suggests unsustainable momentum"
+        },
+        {
+          "symbol": "CTVA",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.58,
+          "why_approved_or_rejected": "Approved for a CALL despite contradictions. K2 saw constructive momentum with a recent rebound, while Qwen approved but noted volume confirmation failure and fundamental deterioration contradicting the technical picture.",
+          "key_concern": "Volume confirmation failure - 0.18 relative volume and -1.54 z-score indicate weak institutional participation"
+        },
+        {
+          "symbol": "CDW",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.594,
+          "why_approved_or_rejected": "Approved for a CALL despite acknowledging weaknesses. K2 noted moderate momentum in a bull regime but lacking volume conviction, while Qwen approved despite volume confirmation failure and elevated leverage.",
+          "key_concern": "Volume confirmation failure (rel_volume=0.05, volume_zscore=-1.64) increases reversal risk"
+        },
+        {
+          "symbol": "SWKS",
+          "approved": false,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": false,
+          "final_score": 0.514,
+          "why_approved_or_rejected": "Rejected by Qwen due to contradictions. K2 proposed a PUT based on weak momentum and declining volume, but Qwen rejected because fundamental quality metrics contradicted K2's assessment and momentum wasn't technically exhausted per rules.",
+          "key_concern": "Fundamental_quality in evidence (0.78) contradicts K2's assessment (0.42), suggesting misaligned valuation analysis"
+        },
+        {
+          "symbol": "DG",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.575,
+          "why_approved_or_rejected": "Approved for a CALL based on solid intermediate-term momentum and accelerating earnings growth. K2 noted outperformance and reasonable valuation, while Qwen approved despite critically low volume and high leverage.",
+          "key_concern": "Volume remains critically low (0.14 rel_volume, -1.81 z-score), indicating weak institutional participation"
+        },
+        {
+          "symbol": "SMCI",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.582,
+          "why_approved_or_rejected": "Approved for a CALL based on strong fundamental momentum and raised guidance catalyst. K2 highlighted exceptional revenue and EPS growth, while Qwen approved despite high debt and volatility risks.",
+          "key_concern": "High debt-to-EBITDA (3.28x) and negative FCF yield (-32%) increase vulnerability to macro risks"
+        },
+        {
+          "symbol": "GPC",
+          "approved": true,
+          "direction": "PUT",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.486,
+          "why_approved_or_rejected": "Approved for a PUT due to classic momentum exhaustion signals. K2 identified collapsing volume and decelerating returns, while Qwen approved despite a contradiction in fundamental quality scores.",
+          "key_concern": "Momentum exhaustion confirmed by 5D return (1.6%) being 0.145x the 10D return (11%) and rel_volume at 0.13x"
+        },
+        {
+          "symbol": "CPRT",
+          "approved": true,
+          "direction": "CALL",
+          "k2_agreed": true,
+          "qwen_agreed": true,
+          "final_score": 0.597,
+          "why_approved_or_rejected": "Approved for a CALL based on intermediate-term momentum following potential M&A catalysts. K2 noted strong returns with modest pullback, while Qwen approved despite extremely low volume and negative earnings growth.",
+          "key_concern": "M&A speculation may already be partially priced in given the 19.8% 10-day run-up"
         }
       ]
     }
