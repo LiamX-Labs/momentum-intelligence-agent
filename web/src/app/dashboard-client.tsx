@@ -16,7 +16,7 @@ import { RegimeBadge } from "@/components/badges";
 import type { DashboardData, Candidate, Trade } from "@/lib/types";
 import { timeAgo } from "@/lib/format";
 import { useLivePositions, useAlpacaAccount, useAlpacaOrders, API_BASE } from "@/lib/live-positions";
-import { LayoutDashboard, Activity, Layers, History, Cpu, Sparkles, RefreshCw, Circle, CircleDot, FileText, Clock, ListOrdered, Loader2 } from "lucide-react";
+import { LayoutDashboard, Activity, Layers, History, Cpu, Sparkles, RefreshCw, Circle, CircleDot, FileText, Clock, ListOrdered, Loader2, WifiOff } from "lucide-react";
 
 const EMPTY_DATA: DashboardData = {
   equity: 0,
@@ -74,7 +74,6 @@ function useDashboardData(intervalMs = 8000) {
 
       const history: Trade[] = tradesData.history || [];
       const openTrades: Trade[] = tradesData.open || [];
-      const perf = tradesData.performance || {};
 
       const wins = history.filter((t: Trade) => (t.pnl ?? 0) > 0);
       const totalPnl = history.reduce((acc: number, t: Trade) => acc + (t.pnl ?? 0), 0);
@@ -156,10 +155,9 @@ function useDashboardData(intervalMs = 8000) {
   }, []);
 
   React.useEffect(() => {
-    let cancelled = false;
-    fetchAll().then(() => { if (!cancelled) setLoading(false); });
+    fetchAll();
     const id = setInterval(fetchAll, intervalMs);
-    return () => { cancelled = true; clearInterval(id); };
+    return () => clearInterval(id);
   }, [fetchAll, intervalMs]);
 
   return { data, loading, error };
@@ -188,7 +186,7 @@ export default function DashboardClient() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center bg-background">
         <div className="text-center">
           <Loader2 className="mx-auto mb-4 size-8 animate-spin text-info" />
           <p className="text-sm text-muted-foreground">Connecting to trading engine...</p>
@@ -216,7 +214,10 @@ export default function DashboardClient() {
             <SchedulerBar scheduler={data.scheduler} />
             <RegimeBadge regime={data.regime} />
             {error ? (
-              <span className="text-[11px] text-warn">{error}</span>
+              <span className="flex items-center gap-1 text-[11px] text-warn">
+                <WifiOff className="size-3" />
+                {error}
+              </span>
             ) : (
               <span className="text-[11px] text-muted-foreground">Updated {timeAgo(data.now)}</span>
             )}
