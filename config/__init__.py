@@ -2,11 +2,34 @@ import logging
 import os
 from pathlib import Path
 
-# Suppress yfinance auth noise before anything imports it.
-# yfinance probes Yahoo's new auth-required API, gets 401, falls back
-# to scraped endpoints successfully — the errors are cosmetic.
-os.environ.setdefault("YF_QUIET", "1")
-logging.getLogger("yfinance").setLevel(logging.WARNING)
+
+class _YFinanceNoiseFilter(logging.Filter):
+    """Drop yfinance 401/auth noise and delisted-ticker spam — Yahoo
+    blocks cloud IPs but yfinance falls back to scraped endpoints.
+    BF.B/BRK.B are known delisted share classes."""
+    _NOISE = frozenset([
+        "Invalid Crumb",
+        "Unable to access this feature",
+        "possibly delisted",
+        "no timezone found",
+        "Failed downloads",
+    ])
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        msg = record.getMessage()
+        for noise in self._NOISE:
+            if noise in msg:
+                return False
+        return True
+
+
+# Apply BEFORE yfinance is imported — once the root logger has handlers,
+# all yfinance ERRORs flow through here.
+_noise_filter = _YFinanceNoiseFilter()
+logging.getLogger().addFilter(_noise_filter)
+logging.getLogger("yfinance").addFilter(_noise_filter)
+logging.getLogger("urllib3").addFilter(_noise_filter)
+logging.getLogger("peewee").setLevel(logging.WARNING)
 
 from dotenv import load_dotenv
 import yaml
