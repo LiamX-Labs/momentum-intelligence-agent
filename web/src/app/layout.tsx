@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Autonomous AI options-trading dashboard — K2 Analyst + Qwen Critic + deterministic risk engine.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
