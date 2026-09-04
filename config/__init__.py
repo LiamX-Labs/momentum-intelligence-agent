@@ -1,5 +1,12 @@
+import logging
 import os
 from pathlib import Path
+
+# Suppress yfinance auth noise before anything imports it.
+# yfinance probes Yahoo's new auth-required API, gets 401, falls back
+# to scraped endpoints successfully — the errors are cosmetic.
+os.environ.setdefault("YF_QUIET", "1")
+logging.getLogger("yfinance").setLevel(logging.WARNING)
 
 from dotenv import load_dotenv
 import yaml

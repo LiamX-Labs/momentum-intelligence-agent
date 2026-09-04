@@ -42,11 +42,6 @@ from trading.positions import liquidate_position
 
 log = logging.getLogger(__name__)
 
-# yfinance logs auth errors at ERROR level even though it falls back
-# and works fine — suppress this noise in container environments.
-logging.getLogger("yfinance").setLevel(logging.WARNING)
-logging.getLogger("peewee").setLevel(logging.WARNING)
-
 app = Flask(__name__)
 app.secret_key = "momentum-intelligence-agent"
 
