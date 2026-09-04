@@ -156,6 +156,11 @@ def _scheduler_loop(state: SchedulerState) -> None:
 _thread: Optional[threading.Thread] = None
 
 
+def _handle_sigterm(signum: int, frame: object) -> None:
+    log.info("Shutdown signal received")
+    stop()
+
+
 def start(interval_seconds: int = 900, enabled: bool = True) -> None:
     """Start the autonomous scheduler in a background daemon thread."""
     global _thread
@@ -173,12 +178,12 @@ def start(interval_seconds: int = 900, enabled: bool = True) -> None:
     _thread = threading.Thread(target=_scheduler_loop, args=(_state,), daemon=True)
     _thread.start()
 
-    def _handle_sigterm(signum: int, frame: object) -> None:
-        log.info("Shutdown signal received")
-        stop()
-
-    signal.signal(signal.SIGTERM, _handle_sigterm)
-    signal.signal(signal.SIGINT, _handle_sigterm)
+    # signal only works in the main thread — skip in WSGI sub-threads
+    try:
+        signal.signal(signal.SIGTERM, _handle_sigterm)
+        signal.signal(signal.SIGINT, _handle_sigterm)
+    except ValueError:
+        log.debug("Scheduler started in non-main thread — signal handlers skipped")
 
 
 def stop() -> None:
