@@ -20,6 +20,7 @@ import json
 import logging
 import os
 import re
+import threading
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
@@ -58,6 +59,49 @@ except ImportError:
         response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
         response.headers["Access-Control-Allow-Headers"] = "Content-Type"
         return response
+
+
+# ── Auto-start autonomous scheduler on module load ──
+# Railway / gunicorn imports the app object directly and never calls
+# run(), so the scheduler must be started at module level.
+_log_configured = False
+
+
+def _maybe_start_scheduler():
+    global _log_configured
+    if not _log_configured:
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s [%(levelname)s] %(message)s",
+        )
+        _log_configured = True
+
+    if os.environ.get("AUTO_START_SCHEDULER", "true").lower() not in ("1", "true", "yes"):
+        return
+
+    cfg = load_config()
+    interval = cfg.get("scheduler", {}).get("interval_minutes", 15) * 60
+    enabled = cfg.get("scheduler", {}).get("enabled_on_start", True)
+
+    from scheduler import start, get_status
+    start(interval_seconds=interval, enabled=enabled)
+    status = get_status()
+    log.info(
+        "Scheduler auto-started: interval=%dmin enabled=%s thread=%s",
+        interval // 60, enabled, status.get("running"),
+    )
+
+
+# Defer to a short timer so the import completes fully before any
+# scheduler code tries to import from main (which imports heavy deps).
+def _deferred_start():
+    import time
+    time.sleep(2)
+    _maybe_start_scheduler()
+
+
+_start_thread = threading.Thread(target=_deferred_start, daemon=True)
+_start_thread.start()
 
 
 def _safe_float(val: Any, default: float = 0.0) -> float:
