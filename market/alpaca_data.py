@@ -1,3 +1,4 @@
+import gc
 import logging
 import os
 from datetime import date, datetime
@@ -20,7 +21,7 @@ def fetch_bars(
     start: date | datetime,
     end: date | datetime,
     interval: str = "1d",
-    batch_size: int = 50,
+    batch_size: int = 20,
 ) -> pd.DataFrame:
     """Fetch OHLCV bars via yfinance at the given interval and return a DataFrame.
 
@@ -29,9 +30,12 @@ def fetch_bars(
     to ``date`` for backward compatibility.
     """
     records = []
+    total = len(symbols)
 
-    for i in range(0, len(symbols), batch_size):
+    for i in range(0, total, batch_size):
         batch = symbols[i : i + batch_size]
+        log.debug("Fetching batch %d/%d (%d symbols)", i // batch_size + 1, (total + batch_size - 1) // batch_size, len(batch))
+        data = None
         try:
             data = yf.download(
                 batch, start=start, end=end, progress=False,
@@ -41,6 +45,7 @@ def fetch_bars(
             continue
 
         if data.empty:
+            del data
             continue
 
         for sym in batch:
@@ -62,6 +67,9 @@ def fetch_bars(
                     })
             except (KeyError, Exception):
                 continue
+
+        del data
+        gc.collect()
 
     df = pd.DataFrame(records)
     if df.empty:

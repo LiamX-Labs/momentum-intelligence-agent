@@ -139,7 +139,7 @@ def run_cycle(lookback_days: int = 70) -> dict:
     end_dt = datetime.now()
 
     # 2. Fetch SPY with long history for accurate regime EMAs
-    sp_days = max(365, spy_lookback_bars // max(1, bar_mult) * 2)
+    sp_days = spy_lookback_bars // max(1, bar_mult) + 100
     log.info(f"2. Fetching SPY ({spy_lookback_bars} {data_interval} bars, ~{sp_days}d window)...")
     spy_df = fetch_bars(
         ["SPY", "AAPL"],
@@ -152,7 +152,7 @@ def run_cycle(lookback_days: int = 70) -> dict:
     log.info(f"   SPY: {len(spy_df)} bars")
 
     # 3. Fetch universe bars
-    un_days = max(365, lookback_bars // max(1, bar_mult) * 2)
+    un_days = lookback_bars // max(1, bar_mult) + 50
     log.info(f"3. Fetching universe bars ({lookback_bars} {data_interval} bars, ~{un_days}d window)...")
     universe_df = fetch_bars(
         universe,
